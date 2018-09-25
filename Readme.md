@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алина Тонких](https://up.htmlacademy.ru/adaptive/15/user/555335).
-* Наставник: `Неизвестно`.
+* Наставник: [Елена Валеева](https://up.htmlacademy.ru/adaptive/15/user/232403).
 
 ---
 

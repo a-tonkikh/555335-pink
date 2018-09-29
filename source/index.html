@@ -1,12 +1,195 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
 
-  </body>
+<body>
+  <header class="page-header">
+    <a class="page-header__logo" href="#">
+      <img class="page-header__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Пинк">
+    </a>
+    <button class="page-header__menu">
+      <img class="page-header__menu-button" src="http://placehold.it/150x100" width="150" height="100" alt="открыть меню">
+    </button>
+    <button class="page-header__menu">
+      <img class="page-header__menu-button" src="http://placehold.it/150x100" width="150" height="100" alt="закрыть меню">
+    </button>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="#">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">Фотографии</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">Конкурс</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page">
+    <h1 class="visually-hidden">Пинк главная</h1>
+    <div class="hero">
+      <img class="hero__hero-image" src="http://placehold.it/150x100" width="150" height="100" alt="Смартфон с приложением">
+    </div>
+    <section class="intro">
+      <h2 class="visually-hidden">Скачать приложение</h2>
+      <a class="intro__download" href="#">Скачайте приложение</a>
+      <ul class="intro__device device">
+        <li class="social__item">
+          <a href="#">
+            <img class="device__image" src="http://placehold.it/150x100" width="150" height="100" alt="iOS">
+          </a>
+        </li>
+        <li class="device__item">
+          <a href="#">
+            <img class="device__image" src="http://placehold.it/150x100" width="150" height="100" alt="Android">
+          </a>
+        </li>
+        <li class="device__item">
+          <a href="#">
+            <img class="device__image" src="http://placehold.it/150x100" width="150" height="100" alt="Windows">
+          </a>
+        </li>
+      </ul>
+      <p class="intro_download-description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    </section>
+    <section class="information">
+      <h2 class="visually-hidden">О приложении</h2>
+      <div class="information__header">
+        <p class="information__hook">Устали от серости мегаполиса?</p>
+        <p class="information__hook">Нам есть, что вам предложить!</p>
+      </div>
+      <div class="features">
+        <ul class="features__list">
+          <li class="features__item">
+            <h3 class="features__title">Поднимает настроение</h3>
+            <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__title">Меняет мир вокруг</h3>
+            <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__title">Заводит новых друзей</h3>
+            <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+        <img class="features__image" src="http://placehold.it/150x100" width="150" height="100" alt="Экран смартфона">
+      </div>
+    </section>
+    <section class="review">
+      <ul class="review__list">
+        <li class="review__item">
+          <h3 class="review__name">Николай Петров</h3>
+          <p class="review__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </li>
+        <li class="review__item">
+          <h3 class="review__name">Николай Петров</h3>
+          <p class="review__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </li>
+        <li class="review__item">
+          <h3 class="review__name">Николай Петров</h3>
+          <p class="review__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </li>
+      </ul>
+      <ul class="review__dots page-dots">
+        <li class="page-dots__item page-dots__item--active"></li>
+        <li class="page-dots__item"></li>
+        <li class="page-dots__item"></li>
+      </ul>
+    </section>
+    <section class="price">
+      <h2 class="visually-hidden">Пакеты приложения</h2>
+      <ul class="price__packages packages">
+        <li class="packages__item">
+          <h3 class="packages__title">База</h3>
+          <p class="packages__price">1,99 USD</p>
+          <ul class="packages__description">
+            <li class="packages__include packages__include--true">Розовый фильтр</li>
+            <li class="packages__include packages__include--false">Смайлики</li>
+            <li class="packages__include packages__include--false">Комментарии</li>
+          </ul>
+        </li>
+        <li class="packages__item packages__item--hit">
+          <h3 class="packages__title">Стандарт</h3>
+          <p class="packages__price">3,99 USD</p>
+          <ul class="packages__description">
+            <li class="packages__include packages__include--true">Розовый фильтр</li>
+            <li class="packages__include packages__include--true">Смайлики</li>
+            <li class="packages__include packages__include--false">Комментарии</li>
+          </ul>
+        </li>
+        <li class="packages__item">
+          <h3 class="packages__title">Анлим</h3>
+          <p class="packages__price">9,99 USD</p>
+          <ul class="packages__description">
+            <li class="packages__include packages__include--true">Розовый фильтр</li>
+            <li class="packages__include packages__include--true">Смайлики</li>
+            <li class="packages__include packages__include--true">Комментарии</li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="price__dots page-dots">
+        <li class="page-dots__item"></li>
+        <li class="page-dots__item page-dots__item--active"></li>
+        <li class="page-dots__item"></li>
+      </ul>
+    </section>
+    <section class="contact-us">
+      <div class="contacts">
+        <p class="contacts__question">Остались вопросы?<br> Свяжитесь с нами!</p>
+        <ul class="contacts-list">
+          <li class="contacts-list__item">
+            <h3 class="contacts-list__title">Звоните:</h3>
+            <p class="contacts-list__address">+7 (812) 555-66-66</p>
+          </li>
+          <li class="contacts-list__item">
+            <h3 class="contacts-list__title">Пишите:</h3>
+            <p class="contacts-list__address">mail@htmlacademy.ru</p>
+          </li>
+          <li class="contacts-list__item">
+            <h3 class="contacts-list__title">Приезжайте в гости:</h3>
+            <p class="contacts-list__address">ул. Большая Конюшенная, 19/8
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="map"></div>
+    </section>
+  </main>
+  <footer class="page-foter main-foter--mobile-hidden">
+    <a class="page-footer__logo" href="#">
+      <img class="competition-footer__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Windows">
+    </a>
+    <ul class="social">
+      <li class="social__item">
+        <a href="#">
+          <img class="social__image" src="http://placehold.it/150x100" width="150" height="100" alt="twitter">
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#">
+          <img class="social__image" src="http://placehold.it/150x100" width="150" height="100" alt="facebook">
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#">
+          <img class="social__image" src="http://placehold.it/150x100" width="150" height="100" alt="youtube">
+        </a>
+      </li>
+    </ul>
+    <p class="page-footer__credits">
+      Разработано <a href="#"><img class="credits__academy-logo" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип html academy"></a>
+    </p>
+  </footer>
+</body>
+
 </html>

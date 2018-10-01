@@ -12,12 +12,9 @@
       <img class="page-header__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Пинк">
     </a>
     <button class="page-header__menu">
-      <img class="page-header__menu-button" src="http://placehold.it/150x100" width="150" height="100" alt="открыть меню">
+      <img class="page-header__menu-button" src="http://placehold.it/150x100" width="150" height="100" alt="меню">
     </button>
-    <button class="page-header__menu">
-      <img class="page-header__menu-button" src="http://placehold.it/150x100" width="150" height="100" alt="закрыть меню">
-    </button>
-    <nav class="main-nav">
+    <nav class="main-nav page-header__menu">
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a>Главная</a>
@@ -35,66 +32,65 @@
     </nav>
   </header>
   <main class="page">
-    <h1 class="visually-hidden">Фотографии</h1>
     <div class="hero">
-      <p class="hero__text">Фотографии пользователей</p>
+      <h1 class="hero__text">Фотографии пользователей</h1>
     </div>
     <p class="page__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-    <section class="pano">
-      <h4 class="visually-hidden">Пано дня</h4>
-      <a href=""><img class="pano__image" src="http://placehold.it/150x100" width="150" height="100" alt="пост пользователя"></a>
-      <p class="pano__author">Анна</p>
-      <p class="pano__time">(5 минут назад)</p>
-      <p class="pano__description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-      <p class="pano__like">Нравится: 215</p>
-    </section>
     <section class="photos">
       <h4 class="visually-hidden">Фотографии пользователей</h4>
       <ul class="users-posts">
-        <li class="users-posts__item">
-          <a href=""><img class="users-posts__image" src="http://placehold.it/150x100" width="150" height="100" alt="пост пользователя"></a>
-          <p class="users-posts__author">Левон</p>
-          <p class="users-posts__time">(5 часов назад)</p>
-          <p class="users-posts__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-          <p class="users-posts__like">Нравится: 356</p>
-        </li>
-        <li class="users-posts__item">
-          <a href=""><img class="users-posts__image" src="http://placehold.it/150x100" width="150" height="100" alt="пост пользователя"></a>
-          <p class="users-posts__author">Антон</p>
-          <p class="users-posts__time">(12 часов назад)</p>
-          <p class="users-posts__description">Соседи будут рады!</p>
-          <p class="users-posts__like">Нравится: 666</p>
-        </li>
-        <li class="users-posts__item">
-          <a href=""><img class="users-posts__image" src="http://placehold.it/150x100" width="150" height="100" alt="пост пользователя"></a>
+        <li class="users-posts__item users-posts__item--pano">
+          <h4 class="visually-hidden">Пано дня</h4>
+          <a href="#"><img class="users-posts__image users-posts__image--pano" src="http://placehold.it/150x100" width="150" height="100" alt="пост пользователя"></a>
           <p class="users-posts__author">Анна</p>
           <p class="users-posts__time">(5 минут назад)</p>
           <p class="users-posts__description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
           <p class="users-posts__like">Нравится: 215</p>
         </li>
         <li class="users-posts__item">
-          <a href=""><img class="users-posts__image" src="http://placehold.it/150x100" width="150" height="100" alt="пост пользователя"></a>
+          <a href="#"><img class="users-posts__image" src="http://placehold.it/150x100" width="150" height="100" alt="пост пользователя"></a>
+          <p class="users-posts__author">Левон</p>
+          <p class="users-posts__time">(5 часов назад)</p>
+          <p class="users-posts__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <p class="users-posts__like">Нравится: 356</p>
+        </li>
+        <li class="users-posts__item">
+          <a href="#"><img class="users-posts__image" src="http://placehold.it/150x100" width="150" height="100" alt="пост пользователя"></a>
+          <p class="users-posts__author">Антон</p>
+          <p class="users-posts__time">(12 часов назад)</p>
+          <p class="users-posts__description">Соседи будут рады!</p>
+          <p class="users-posts__like">Нравится: 666</p>
+        </li>
+        <li class="users-posts__item">
+          <a href="#"><img class="users-posts__image" src="http://placehold.it/150x100" width="150" height="100" alt="пост пользователя"></a>
+          <p class="users-posts__author">Анна</p>
+          <p class="users-posts__time">(5 минут назад)</p>
+          <p class="users-posts__description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <p class="users-posts__like">Нравится: 215</p>
+        </li>
+        <li class="users-posts__item">
+          <a href="#"><img class="users-posts__image" src="http://placehold.it/150x100" width="150" height="100" alt="пост пользователя"></a>
           <p class="users-posts__author">Борис</p>
           <p class="users-posts__time">(20 часов назад)</p>
           <p class="users-posts__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
           <p class="users-posts__like">Нравится: 215</p>
         </li>
         <li class="users-posts__item">
-          <a href=""><img class="users-posts__image" src="http://placehold.it/150x100" width="150" height="100" alt="пост пользователя"></a>
+          <a href="#"><img class="users-posts__image" src="http://placehold.it/150x100" width="150" height="100" alt="пост пользователя"></a>
           <p class="users-posts__author">Сергей</p>
           <p class="users-posts__time">(25 часов назад)</p>
           <p class="users-posts__description">Самая кубанская в мире!</p>
           <p class="users-posts__like">Нравится: 4</p>
         </li>
         <li class="users-posts__item">
-          <a href=""><img class="users-posts__image" src="http://placehold.it/150x100" width="150" height="100" alt="пост пользователя"></a>
+          <a href="#"><img class="users-posts__image" src="http://placehold.it/150x100" width="150" height="100" alt="пост пользователя"></a>
           <p class="users-posts__author">Максим</p>
           <p class="users-posts__time">(40 часов назад)</p>
           <p class="users-posts__description">Где снег-то?</p>
           <p class="users-posts__like">Нравится: 150</p>
         </li>
         <li class="users-posts__item">
-          <a href=""><img class="users-posts__image" src="http://placehold.it/150x100" width="150" height="100" alt="пост пользователя"></a>
+          <a href="#"><img class="users-posts__image" src="http://placehold.it/150x100" width="150" height="100" alt="пост пользователя"></a>
           <p class="users-posts__author">Надежда</p>
           <p class="users-posts__time">(45 часов назад)</p>
           <p class="users-posts__description">Всем GM и взаимные лайки!</p>
@@ -107,8 +103,8 @@
       <h4 class="visually-hidden">Загрузить фотографию</h4>
       <img class="user-upload__photo" src="http://placehold.it/150x100" width="150" height="100" alt="загружаемое фото">
       <ul class="edit">
-        <li class="edit__item">
-          <img class="edit__tool edit__tool--active" src="http://placehold.it/150x100" width="150" height="100" alt="обрезать фото">
+        <li class="edit__item edit__item--active">
+          <span class="visually-hidden">обрезать фото</span>
           <input class="edit__range" type="range" min="0" max="50" step="1" value="40">
         </li>
         <li class="edit__item">
@@ -116,37 +112,37 @@
           <input class="edit__range" type="range" min="0" max="50" step="1" value="0">
         </li>
         <li class="edit__item">
-          <img class="edit__tool" src="http://placehold.it/150x100" width="150" height="100" alt="изменить контраст">
+          <span class="visually-hidden">изменить контраст</span>
           <input class="edit__range" type="range" min="0" max="50" step="1" value="0">
         </li>
       </ul>
-      <input class="user-upload__button" type="submit" value="Запостить">
-      <input class="user-upload__button user-upload__button--disabled" type="reset" value="Отмена" disabled>
+      <button class="user-upload__button" type="submit">Запостить</button>
+      <button class="user-upload__button user-upload__button--disabled" type="reset" disabled>Отмена</button>
     </section>
   </main>
   <footer class="page-footer">
-    <a class="page-footer__logo">
-      <img class="competition-footer__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Windows">
+    <a class="page-footer__logo" href="#">
+      <img class="page-footer__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="пинк лого">
     </a>
     <ul class="social">
       <li class="social__item">
-        <a>
-          <img class="social__image" src="http://placehold.it/150x100" width="150" height="100" alt="twitter">
+        <a href="#" class="social__link--twitter">
+          <span class="visually-hidden">ссылка на twitter</span>
         </a>
       </li>
       <li class="social__item">
-        <a>
-          <img class="social__image" src="http://placehold.it/150x100" width="150" height="100" alt="facebook">
+        <a href="#" class="social__link--facebook">
+          <span class="visually-hidden">ссылка на facebook</span>
         </a>
       </li>
       <li class="social__item">
-        <a>
-          <img class="social__image" src="http://placehold.it/150x100" width="150" height="100" alt="youtube">
+        <a href="#" class="social__link--youtube">
+          <span class="visually-hidden">ссылка на youtube</span>
         </a>
       </li>
     </ul>
     <p class="page-footer__credits">
-      Разработано <img class="credits__academy-logo" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип html academy">
+      Разработано <img class="page-footer__academy-logo" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип html academy">
     </p>
   </footer>
 </body>

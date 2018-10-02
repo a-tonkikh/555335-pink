@@ -8,13 +8,13 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo" href="#">
-      <img class="page-header__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Пинк">
-    </a>
-    <button class="page-header__menu" type="button">
-      <img class="page-header__menu-button" src="http://placehold.it/150x100" width="150" height="100" alt="меню">
-    </button>
     <nav class="main-nav page-header__menu">
+      <a class="page-header__logo" href="#">
+        <img class="page-header__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Пинк">
+      </a>
+      <button class="page-header__menu">
+        <span class="visually-hidden">Меню</span>
+      </button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a href="#">Главная</a>
@@ -45,7 +45,7 @@
         <label class="form-competition__text-label" for="secondname">Отчество:</label>
         <input class="form-competition__text" type="text" id="secondname" placeholder="Ну и отчество тоже">
       </fieldset>
-      <fieldset class="form-competition__set form__competition-set--gray">
+      <fieldset class="form-competition__set form-competition__set--gray">
         <legend class="form-competition__title">Ваши безбашенные достижения в путешествии</legend>
         <input class="form-competition__checkbox" type="checkbox" name="achievement" value="shark" id="shark" checked>
         <label class="form-competition__item" for="shark">Сделал селфи с акулой</label>
@@ -101,17 +101,17 @@
     </a>
     <ul class="social">
       <li class="social__item">
-        <a href="#" class="social__link--twitter">
+        <a href="#" class="social__link social__link--twitter">
           <span class="visually-hidden">ссылка на twitter</span>
         </a>
       </li>
       <li class="social__item">
-        <a href="#" class="social__link--facebook">
+        <a href="#" class="social__link social__link--facebook">
           <span class="visually-hidden">ссылка на facebook</span>
         </a>
       </li>
       <li class="social__item">
-        <a href="#" class="social__link--youtube">
+        <a href="#" class="social__link social__link--youtube">
           <span class="visually-hidden">ссылка на youtube</span>
         </a>
       </li>

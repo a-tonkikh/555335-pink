@@ -1,5 +1,5 @@
 .price {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   background-color: #f2f2f2;
   padding: 65px 0;
   margin: 0;
@@ -19,6 +19,7 @@
   border-left: 2px solid #e5e5e5;
   position: relative;
   text-transform: uppercase;
+
   &--hit::before {
     content: "ХИТ";
     position: absolute;
@@ -26,7 +27,7 @@
     left: 0;
     width: 74px;
     height: 73px;
-    background: url(source/img/bg-hit.svg) no-repeat;
+    background: url("source/img/bg-hit.svg") no-repeat;
   }
 }
 
@@ -70,6 +71,7 @@
   border-top: 2px solid #e5e5e5;
   border-bottom: 2px solid #e5e5e5;
   position: relative;
+
   &--true::after {
     content: "";
     position: absolute;
@@ -77,16 +79,16 @@
     height: 21px;
     top: 20px;
     right: 17px;
-    background: url(source/img/icon-yes.svg) no-repeat;
+    background: url("source/img/icon-yes.svg") no-repeat;
   }
-  &--true::after {
+  &--false::after {
     content: "";
     position: absolute;
     width: 27px;
     height: 27px;
     top: 15px;
     right: 17px;
-    background: url(source/img/icon-no.svg) no-repeat;
+    background: url("source/img/icon-no.svg") no-repeat;
   }
 }
 

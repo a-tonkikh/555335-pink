@@ -4,17 +4,20 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
     <nav class="main-nav page-header__menu">
-      <a class="page-header__logo">
+      <div class="main-nav__top">
+        <a class="page-header__logo">
         <img class="page-header__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Пинк">
       </a>
-      <button class="page-header__menu">
+        <button class="page-header__menu">
         <span class="visually-hidden">Меню</span>
       </button>
+      </div>
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a>Главная</a>
@@ -34,35 +37,36 @@
   <main class="page">
     <h1 class="visually-hidden">Пинк</h1>
     <div class="hero">
-      <img class="hero__image" src="http://placehold.it/150x100" width="150" height="100" alt="Смартфон с приложением">
+      <div class="hero__title hero__title--main">
+        <img class="hero__image" src="http://placehold.it/150x100" width="150" height="100" alt="Смартфон с приложением">
+      </div>
+      <div class="hero__download">
+        <a class="hero__download-buttom" href="#">Скачайте приложение</a>
+        <ul class="hero__device device">
+          <li class="device__item">
+            <a href="#" class="device__link device__link--ios">
+              <span class="visually-hidden">приложение для iOS</span>
+            </a>
+          </li>
+          <li class="device__item">
+            <a href="#" class="device__link device__link--android">
+              <span class="visually-hidden">приложение для Android</span>
+            </a>
+          </li>
+          <li class="device__link device__link--windows">
+            <a href="#">
+              <span class="visually-hidden">приложение для Windows</span>
+            </a>
+          </li>
+        </ul>
+        <p class="intro__download-description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
     </div>
-    <section class="intro">
-      <h2 class="visually-hidden">Наше приложение</h2>
-      <a class="intro__download" href="#">Скачайте приложение</a>
-      <ul class="intro__device device">
-        <li class="device__item">
-          <a href="#" class="device__link device__link--ios">
-            <span class="visually-hidden">приложение для iOS</span>
-          </a>
-        </li>
-        <li class="device__item">
-          <a href="#" class="device__link device__link--android">
-            <span class="visually-hidden">приложение для Android</span>
-          </a>
-        </li>
-        <li class="device__link device__link--windows">
-          <a href="#">
-            <span class="visually-hidden">приложение для Windows</span>
-          </a>
-        </li>
-      </ul>
-      <p class="intro__download-description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-    </section>
     <section class="information">
       <h2 class="visually-hidden">О приложении</h2>
-      <div class="information__header">
-        <p class="information__hook">Устали от серости мегаполиса?</p>
-        <p class="information__hook">Нам есть, что вам предложить!</p>
+      <div class="information__header section-header">
+        <p class="section-header__hook">Устали от серости мегаполиса?</p>
+        <p class="section-header__hook">Нам есть, что вам предложить!</p>
       </div>
       <div class="features">
         <ul class="features__list">
@@ -100,7 +104,7 @@
           </li>
         </ul>
         <p class="review__toggles slider__toggles">
-          <button class="slider__toggle" type="button"></button>
+          <button class="slider__toggle slider__toggle--active" type="button"></button>
           <button class="slider__toggle" type="button"></button>
           <button class="slider__toggle" type="button"></button>
         </p>
@@ -111,8 +115,10 @@
       <div class="price__wrapper slider">
         <ul class="price__packages packages slider__list">
           <li class="packages__item slider__item">
-            <h3 class="packages__title">База</h3>
-            <p class="packages__price">1,99 USD</p>
+            <div class="packages__header">
+              <h3 class="packages__title">База</h3>
+              <p class="packages__price">1,99 USD</p>
+            </div>
             <ul class="packages__description">
               <li class="packages__include packages__include--true">Розовый фильтр <span class="visually-hidden">доступно</span></li>
               <li class="packages__include packages__include--false">Смайлики <span class="visually-hidden">недоступно</span></li>
@@ -120,8 +126,10 @@
             </ul>
           </li>
           <li class="packages__item packages__item--hit slider__item">
-            <h3 class="packages__title">Стандарт</h3>
-            <p class="packages__price">3,99 USD</p>
+            <div class="packages__header">
+              <h3 class="packages__title">Стандарт</h3>
+              <p class="packages__price">3,99 USD</p>
+            </div>
             <ul class="packages__description">
               <li class="packages__include packages__include--true">Розовый фильтр <span class="visually-hidden">доступно</span></li>
               <li class="packages__include packages__include--true">Смайлики <span class="visually-hidden">доступно</span></li>
@@ -129,8 +137,10 @@
             </ul>
           </li>
           <li class="packages__item slider__item">
-            <h3 class="packages__title">Анлим</h3>
-            <p class="packages__price">9,99 USD</p>
+            <div class="packages__header">
+              <h3 class="packages__title">Анлим</h3>
+              <p class="packages__price">9,99 USD</p>
+            </div>
             <ul class="packages__description">
               <li class="packages__include packages__include--true">Розовый фильтр <span class="visually-hidden">доступно</span></li>
               <li class="packages__include packages__include--true">Смайлики <span class="visually-hidden">доступно</span></li>
@@ -138,7 +148,7 @@
             </ul>
           </li>
         </ul>
-        <p class="review__toggles slider__toggles">
+        <p class="price__toggles slider__toggles">
           <button class="slider__toggle" type="button"></button>
           <button class="slider__toggle" type="button"></button>
           <button class="slider__toggle" type="button"></button>
@@ -148,7 +158,9 @@
     <section class="contact-us">
       <h2 class="visually-hidden">Наши контакты</h2>
       <div class="contacts">
-        <p class="contacts__question">Остались вопросы?<br> Свяжитесь с нами!</p>
+        <div class="contacts__question section-header">
+          <p class="section-header__hook">Остались вопросы?<br> Свяжитесь с нами!</p>
+        </div>
         <ul class="contacts-list">
           <li class="contacts-list__item">
             <h3 class="contacts-list__title">Звоните:</h3>
@@ -190,7 +202,7 @@
       </li>
     </ul>
     <p class="page-footer__credits">
-      Разработано <a href="#"><img class="page-footer__academy-logo" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип html academy"></a>
+      Разработано <a class="page-footer__academy-link" href="#"><img class="page-footer__academy-logo" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип html academy"></a>
     </p>
   </footer>
 </body>

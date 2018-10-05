@@ -1,0 +1,99 @@
+.packages {
+  border-collapse: collapse;
+}
+
+.packages__item {
+  border-right: 2px solid #e5e5e5;
+  border-left: 2px solid #e5e5e5;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  width: 276px;
+}
+
+.packages__header {
+  background-color: #283645;
+  border-bottom: 2px solid #e5e5e5;
+  border-left: 2px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 276px;
+
+  &--hit::before {
+    background: url("../img/bg-hit.svg") no-repeat;
+    content: "";
+    height: 73px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 74px;
+  }
+  &--hit::after {
+    content: "ХИТ";
+    height: 73px;
+    left: 9px;
+    position: absolute;
+    top: 5px;
+    transform: rotate(-45deg);
+    width: 74px;
+  }
+}
+
+.packages__title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.packages__price {
+  font-size: 24px;
+  font-weight: lighter;
+  line-height: 30px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.packages__description {
+  margin: 0;
+}
+
+.packages__include {
+  background-color: #ffffff;
+  border-bottom: 2px solid #e5e5e5;
+  border-left: 2px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
+  color: #283645;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 30px;
+  margin: 0;
+  padding: 22px;
+  position: relative;
+
+  &--true::after {
+    background: url("../img/icon-yes.svg") no-repeat;
+    background-size: contain;
+    content: "";
+    height: 21px;
+    position: absolute;
+    right: 17px;
+    top: 20px;
+    width: 31px;
+  }
+
+  &--false::after {
+    background: url("../img/icon-no.svg") no-repeat;
+    background-size: contain;
+    content: "";
+    height: 27px;
+    position: absolute;
+    right: 17px;
+    top: 15px;
+    width: 27px;
+  }
+}

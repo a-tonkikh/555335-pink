@@ -12,54 +12,54 @@
     <nav class="main-nav page-header__menu">
       <div class="main-nav__top">
         <a class="page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Пинк">
-      </a>
+          <img class="page-header__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Пинк">
+        </a>
         <button class="page-header__menu">
         <span class="visually-hidden">Меню</span>
       </button>
       </div>
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a>Главная</a>
+          <a class="main-nav__link">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a href="#">Фотографии</a>
+          <a class="main-nav__link" href="#">Фотографии</a>
         </li>
         <li class="main-nav__item">
-          <a href="#">Конкурс</a>
+          <a class="main-nav__link" href="#">Конкурс</a>
         </li>
         <li class="main-nav__item">
-          <a href="#">HTML Academy</a>
+          <a class="main-nav__link" href="#">HTML Academy</a>
         </li>
       </ul>
     </nav>
   </header>
   <main class="page">
     <h1 class="visually-hidden">Пинк</h1>
-    <div class="hero">
-      <div class="hero__title hero__title--main">
-        <img class="hero__image" src="http://placehold.it/150x100" width="150" height="100" alt="Смартфон с приложением">
+    <div class="hero hero--main">
+      <div class="hero__image">
+        <img class="hero__picture" src="http://placehold.it/150x100" width="150" height="100" alt="Смартфон с приложением">
       </div>
       <div class="hero__download">
         <a class="hero__download-buttom" href="#">Скачайте приложение</a>
         <ul class="hero__device device">
-          <li class="device__item">
+          <li class="device__item device__item--ios">
             <a href="#" class="device__link device__link--ios">
               <span class="visually-hidden">приложение для iOS</span>
             </a>
           </li>
-          <li class="device__item">
+          <li class="device__item device__item--android">
             <a href="#" class="device__link device__link--android">
               <span class="visually-hidden">приложение для Android</span>
             </a>
           </li>
-          <li class="device__link device__link--windows">
-            <a href="#">
+          <li class="device__item device__item--windows">
+            <a href="#" class="device__link device__link--windows">
               <span class="visually-hidden">приложение для Windows</span>
             </a>
           </li>
         </ul>
-        <p class="intro__download-description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <p class="device__download-description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
     </div>
     <section class="information">
@@ -113,41 +113,37 @@
     <section class="price">
       <h2 class="visually-hidden">Пакеты приложения</h2>
       <div class="price__wrapper slider">
-        <ul class="price__packages packages slider__list">
-          <li class="packages__item slider__item">
-            <div class="packages__header">
+        <table class="price__packages packages slider__list">
+          <tr class="packages__description">
+            <th class="packages__header">
               <h3 class="packages__title">База</h3>
               <p class="packages__price">1,99 USD</p>
-            </div>
-            <ul class="packages__description">
-              <li class="packages__include packages__include--true">Розовый фильтр <span class="visually-hidden">доступно</span></li>
-              <li class="packages__include packages__include--false">Смайлики <span class="visually-hidden">недоступно</span></li>
-              <li class="packages__include packages__include--false">Комментарии <span class="visually-hidden">недоступно</span></li>
-            </ul>
-          </li>
-          <li class="packages__item packages__item--hit slider__item">
-            <div class="packages__header">
+            </th>
+            <th class="packages__header packages__header--hit">
               <h3 class="packages__title">Стандарт</h3>
               <p class="packages__price">3,99 USD</p>
-            </div>
-            <ul class="packages__description">
-              <li class="packages__include packages__include--true">Розовый фильтр <span class="visually-hidden">доступно</span></li>
-              <li class="packages__include packages__include--true">Смайлики <span class="visually-hidden">доступно</span></li>
-              <li class="packages__include packages__include--false">Комментарии <span class="visually-hidden">недоступно</span></li>
-            </ul>
-          </li>
-          <li class="packages__item slider__item">
-            <div class="packages__header">
+            </th>
+            <th class="packages__header">
               <h3 class="packages__title">Анлим</h3>
               <p class="packages__price">9,99 USD</p>
-            </div>
-            <ul class="packages__description">
-              <li class="packages__include packages__include--true">Розовый фильтр <span class="visually-hidden">доступно</span></li>
-              <li class="packages__include packages__include--true">Смайлики <span class="visually-hidden">доступно</span></li>
-              <li class="packages__include packages__include--true">Комментарии <span class="visually-hidden">доступно</span></li>
-            </ul>
-          </li>
-        </ul>
+            </th>
+          </tr>
+          <tr class="packages__description">
+            <td class="packages__include packages__include--true">Розовый фильтр <span class="visually-hidden">доступно</span></td>
+            <td class="packages__include packages__include--true">Розовый фильтр <span class="visually-hidden">доступно</span></td>
+            <td class="packages__include packages__include--true">Розовый фильтр <span class="visually-hidden">доступно</span></td>
+          </tr>
+          <tr class="packages__description">
+            <td class="packages__include packages__include--false">Смайлики <span class="visually-hidden">недоступно</span></td>
+            <td class="packages__include packages__include--true">Смайлики <span class="visually-hidden">доступно</span></td>
+            <td class="packages__include packages__include--true">Смайлики <span class="visually-hidden">доступно</span></td>
+          </tr>
+          <tr class="packages__description">
+            <td class="packages__include packages__include--false">Комментарии <span class="visually-hidden">недоступно</span></td>
+            <td class="packages__include packages__include--false">Комментарии <span class="visually-hidden">недоступно</span></td>
+            <td class="packages__include packages__include--true">Комментарии <span class="visually-hidden">доступно</span></td>
+          </tr>
+        </table>
         <p class="price__toggles slider__toggles">
           <button class="slider__toggle" type="button"></button>
           <button class="slider__toggle" type="button"></button>
@@ -185,17 +181,17 @@
       <img class="page-footer__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="пинк лого">
     </a>
     <ul class="social">
-      <li class="social__item">
+      <li class="social__item social__item--twitter">
         <a href="#" class="social__link social__link--twitter">
           <span class="visually-hidden">ссылка на twitter</span>
         </a>
       </li>
-      <li class="social__item">
+      <li class="social__item social__item--facebook">
         <a href="#" class="social__link social__link--facebook">
           <span class="visually-hidden">ссылка на facebook</span>
         </a>
       </li>
-      <li class="social__item">
+      <li class="social__item social__item--youtube">
         <a href="#" class="social__link social__link--youtube">
           <span class="visually-hidden">ссылка на youtube</span>
         </a>

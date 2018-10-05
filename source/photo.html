@@ -18,27 +18,25 @@
       </button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a>Главная</a>
+          <a class="main-nav__link" href="#">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a>Фотографии</a>
+          <a class="main-nav__link">Фотографии</a>
         </li>
         <li class="main-nav__item">
-          <a>Конкурс</a>
+          <a class="main-nav__link" href="#">Конкурс</a>
         </li>
         <li class="main-nav__item">
-          <a>HTML Academy</a>
+          <a class="main-nav__link" href="#">HTML Academy</a>
         </li>
       </ul>
     </nav>
   </header>
   <main class="page">
     <div class="hero">
-      <div class="hero__title">
-        <h1 class="hero__text">Фотографии пользователей</h1>
-      </div>
+      <h1 class="hero__text">Фотографии пользователей</h1>
     </div>
-    <p class="page__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+    <p class="description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
     <ul class="users-posts">
       <li class="users-posts__item users-posts__item--pano">
         <p class="users-posts__title">Панорама дня</p>
@@ -147,30 +145,30 @@
         </div>
       </li>
     </ul>
-    <p class="page__description">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
+    <p class="description">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
     <form class="user-upload" action="https://echo.htmlacademy.ru" method="post">
       <h4 class="visually-hidden">Загрузить фотографию</h4>
       <div class="user-upload__photo">
         <img class="user-upload__image" src="http://placehold.it/150x100" width="150" height="100" alt="загружаемое фото">
       </div>
-      <ul class="edit">
-        <li class="edit__item">
-          <p class="edit__tool edit__tool--active">
+      <ul class="edit-photo-photo">
+        <li class="edit-photo__item">
+          <p class="edit-photo__tool edit-photo__tool--active">
             <span class="visually-hidden">обрезать фото</span>
           </p>
-          <input class="edit__range" type="range" min="0" max="50" step="1" value="40">
+          <input class="edit-photo__range" type="range" min="0" max="50" step="1" value="40">
         </li>
-        <li class="edit__item">
-          <p class="edit__tool">
+        <li class="edit-photo__item">
+          <p class="edit-photo__tool">
             <span class="visually-hidden">поменять цвет</span>
           </p>
-          <input class="edit__range" type="range" min="0" max="50" step="1" value="0">
+          <input class="edit-photo__range" type="range" min="0" max="50" step="1" value="0">
         </li>
-        <li class="edit__item">
-          <p class="edit__tool">
+        <li class="edit-photo__item">
+          <p class="edit-photo__tool">
             <span class="visually-hidden">изменить контраст</span>
           </p>
-          <input class="edit__range" type="range" min="0" max="50" step="1" value="0">
+          <input class="edit-photo__range" type="range" min="0" max="50" step="1" value="0">
         </li>
       </ul>
       <div class="user-upload__buttons">
@@ -184,23 +182,23 @@
       <img class="page-footer__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="пинк лого">
     </a>
     <ul class="social">
-      <li class="social__item">
+      <li class="social__item social__item--twitter">
         <a href="#" class="social__link social__link--twitter">
           <span class="visually-hidden">ссылка на twitter</span>
         </a>
       </li>
-      <li class="social__item">
+      <li class="social__item social__item--facebook">
         <a href="#" class="social__link social__link--facebook">
           <span class="visually-hidden">ссылка на facebook</span>
         </a>
       </li>
-      <li class="social__item">
+      <li class="social__item social__item--youtube">
         <a href="#" class="social__link social__link--youtube">
           <span class="visually-hidden">ссылка на youtube</span>
         </a>
       </li>
     </ul>
-    <p class="page-footer__credits">
+    <p class="page-footer__credit-photos">
       Разработано <img class="page-footer__academy-logo" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип html academy">
     </p>
   </footer>

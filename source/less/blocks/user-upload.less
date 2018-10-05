@@ -1,69 +1,41 @@
 .user-upload {
-  font-family: "Open Sans", sans-serif;
   background-color: #f2f2f2;
-  padding: 20px;
+  font-family: "Open Sans", sans-serif;
   margin: 0;
+  padding: 20px;
 }
 
 .user-upload__photo {
-  width: 280px;
-  height: 374px;
-  overflow: hidden;
   box-sizing: border-box;
-  padding: 0;
+  height: 374px;
   margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+  width: 280px;
 }
 
 .user-upload__image {
-  width: 100%;
   height: 100%;
   margin: 0;
   object-fit: cover;
-}
-
-.edit {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-}
-
-.edit__item {
-  padding: 0;
-  margin: 0;
-}
-
-.edit__tool {
-  fill: rgba(40, 54, 69, 0.3);
-
-  &--active {
-    fill: #d22856;
-  }
-
-  &:hover {
-    fill: rgba(40, 54, 69, 0.5);
-  }
-}
-
-.edit__range {
-  padding: 0;
-  margin: 25px auto;
+  width: 100%;
 }
 
 .user-upload__buttons {
-  padding: 0;
-  margin: 0;
   border-top: 1px solid #dddfe0;
+  margin: 0;
+  padding: 0;
 }
 
 .user-upload__button {
-  width: 274px;
   background-color: transparent;
   border-radius: 50px;
   font-size: 18px;
-  line-height: 18px;
   font-weight: bold;
-  padding: 17px;
+  line-height: 18px;
   margin: 12px auto;
+  padding: 17px;
+  width: 274px;
 
   &--upload {
     border: 3px solid #d22856;
@@ -81,18 +53,18 @@
   }
 
   &--cancel {
-    opacity: 0.1;
     border: 3px solid #283645;
     color: #283645;
+    opacity: 0.1;
 
     &:hover {
       opacity: 0.3;
     }
 
     &:active {
-      opacity: 0.3;
       background-color: #283645;
       color: #ffffff;
+      opacity: 0.3;
     }
   }
 }

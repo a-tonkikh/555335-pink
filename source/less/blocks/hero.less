@@ -1,14 +1,12 @@
-.page-header {
-  font-family: "Open Sans", sans-serif;
+.hero {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #ffffff;
-}
-
-.hero__title {
-  background: url("source/img/bg-back-mobile@1x.jpg") no-repeat;
-  font-weight: lighter;
   font-size: 24px;
-  padding: 102px 0 0 0;
+  font-weight: lighter;
   margin: 0;
+  padding: 102px 0 0 0;
 
   &--main {
     padding: 175px 0 0 0;
@@ -16,64 +14,49 @@
 }
 
 .hero__image {
-  padding: 0;
+  height: 320px;
   margin: 0 auto;
+  padding: 0;
+  width: 320px;
+}
+
+.hero__picture {
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
+  width: 100%;
 }
 
 .hero__text {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: lighter;
+  margin: 0 auto;
   padding: 0;
-  margin: 0, auto;
 }
 
 .hero__download {
   background-color: #1d2631;
-  padding: 28px, 20px;
   margin: 0;
+  padding: 28px, 20px;
 }
 
 .hero__download-buttom {
+  border: 3px solid #ffffff;
+  border-radius: 50px;
+  color: #ffffff;
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
+  margin: 0 auto;
   padding: 17px 36px;
-  margin: 0 auto;
-  border: 3px solid #ffffff;
-  border-radius: 50px;
-}
-
-.hero__device {
-  list-style: none;
-  margin: 30px auto;
-  padding: 0;
-}
-
-.device__item {
-  padding: 0;
-  margin: 0 auto;
-  width: 56px;
-  height: 56px;
-}
-
-.device__link {
   text-decoration: none;
 
-  &--ios {
-    background: url("source\img\logo-apple.svg") center no-repeat;
+  &:hover {
+    background-color: #ffffff;
+    color: #d22856;
   }
-
-  &--android {
-    background: url("source\img\logo-android.svg") center no-repeat;
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
   }
-
-  &--windows {
-    background: url("source\img\logo-windows.svg") center no-repeat;
-  }
-}
-
-.intro__download-description {
-  padding: 0;
-  margin: 0 auto;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: lighter;
 }

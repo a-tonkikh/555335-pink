@@ -1,0 +1,110 @@
+.users-posts {
+  background-color: #ffffff;
+  color: #283645;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.users-posts__item {
+  margin: 20px auto;
+  padding: 0;
+  width: 280px;
+
+  &--pano {
+    position: relative;
+    width: 100%;
+  }
+}
+
+.users-posts__title {
+  background-color: #d22856;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 24px;
+  margin: 0;
+  padding: 13px 20px;
+  position: absolute;
+  right: 20px;
+  top: 0;
+  text-transform: uppercase;
+}
+
+.users-posts__photo {
+  box-sizing: border-box;
+  height: 180px;
+  overflow: hidden;
+  width: 280px;
+
+  &--pano {
+    height: 137px;
+    width: 100%;
+  }
+}
+
+.users-posts__image {
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
+  width: 100%;
+}
+
+.users-posts__article {
+  background-color: #f2f2f2;
+  margin: 0 auto;
+  padding: 25px 18px;
+  width: 280px;
+}
+
+.users-posts__head {
+  margin: 0;
+  padding: 0;
+}
+
+.users-posts__author {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.users-posts__time {
+  font-size: 12px;
+  font-weight: lighter;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.users-posts__description {
+  color: #283645;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  margin: 14px 0;
+  padding: 0;
+}
+
+.users-posts__like {
+  color: #d22856;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 24px;
+  margin: 0;
+  padding: 0 0 0 30px;
+  position: relative;
+  text-transform: uppercase;
+
+  &::before {
+    background: url("../img/icon-heart.svg") no-repeat;
+    content: "";
+    height: 12px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 13px;
+  }
+}

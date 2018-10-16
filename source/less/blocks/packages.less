@@ -106,6 +106,7 @@
   padding: 0;
   margin: 0;
 }
+
 @media (min-width: @tablet-width) {
   .packages {
     margin: 0 auto;
@@ -118,6 +119,21 @@
       background-color: transparent;
       border: none;
       display: block;
+    }
+
+    &--hit::before {
+      background: url("../img/bg-hit-tablet.svg") no-repeat;
+      height: 61px;
+      width: 61px;
+    }
+
+    &--hit::after {
+      font-size: 14px;
+      font-weight: normal;
+      height: 61px;
+      left: 4px;
+      top: 3px;
+      width: 61px;
     }
   }
 
@@ -132,6 +148,22 @@
   .packages__include {
     padding: 0;
     width: auto;
+
+    &--true::after {
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      right: 0;
+      top: 0;
+    }
+
+    &--false::after {
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      right: 0;
+      top: 0;
+    }
   }
 
   .packages__offer {
@@ -150,48 +182,28 @@
     display: none;
   }
 
-  .packages__include {
-    &--true::after {
-      bottom: 0;
-      left: 0;
-      margin: auto;
-      right: 0;
-      top: 0;
-    }
-
-    &--false::after {
-      bottom: 0;
-      left: 0;
-      margin: auto;
-      right: 0;
-      top: 0;
-    }
-  }
-
-  .packages__header {
-    &--hit::before {
-      background: url("../img/bg-hit-tablet.svg") no-repeat;
-      height: 61px;
-      width: 61px;
-    }
-
-    &--hit::after {
-      font-size: 14px;
-      font-weight: normal;
-      height: 61px;
-      left: 4px;
-      top: 3px;
-      width: 61px;
-    }
-  }
-
   .price__toggles {
     display: none;
   }
 }
+
 @media (min-width: @desktop-width) {
   .packages__header {
     padding: 19px 64px;
+
+    &--hit::before {
+      background: url("../img/bg-hit.svg") no-repeat;
+      background-size: cover;
+      height: 73px;
+      width: 73px;
+    }
+
+    &--hit::after {
+      height: 73px;
+      left: 6px;
+      top: 10px;
+      width: 73px;
+    }
   }
 
   .packages__title {
@@ -209,21 +221,5 @@
     line-height: 30px;
     padding: 14px 21px;
     width: 191px;
-  }
-
-  .packages__header {
-    &--hit::before {
-      background: url("../img/bg-hit.svg") no-repeat;
-      background-size: cover;
-      height: 73px;
-      width: 73px;
-    }
-
-    &--hit::after {
-      height: 73px;
-      left: 6px;
-      top: 10px;
-      width: 73px;
-    }
   }
 }

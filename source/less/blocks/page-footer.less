@@ -1,5 +1,9 @@
 .page-footer {
+  align-items: center;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: 0;
   padding: 40px 59px;
 
@@ -9,9 +13,11 @@
 }
 
 .page-footer__logo {
-  margin: 0;
+  display: block;
+  margin: 0 auto;
   padding: 0;
   text-decoration: none;
+  text-align: center;
 }
 
 .page-footer__logo-image {
@@ -26,15 +32,26 @@
 
 .page-footer__credits {
   color: #283645;
+  display: block;
   font-size: 14px;
   font-weight: normal;
   line-height: 18px;
   margin: 0 auto;
+  margin-top: 42px;
   padding: 0;
+  text-align: center;
+}
+
+.page-footer__credits-text {
+  margin: 0 8px;
+  vertical-align: middle;
 }
 
 .page-footer__academy-link {
+  display: inline-block;
+  margin: 0 7px;
   text-decoration: none;
+  vertical-align: middle;
 }
 
 .page-footer__academy-logo {
@@ -47,5 +64,34 @@
   &:active {
     fill: #283645;
     opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    flex-direction: row;
+    padding: 35px 13px;
+
+    &--mobile-hidden {
+      display: flex;
+    }
+  }
+  .page-footer__logo {
+    margin: 0;
+    margin-left: 7px;
+  }
+  .page-footer__credits {
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    padding: 72px 123px;
+  }
+
+  .page-footer__credits {
+    font-size: 18px;
+    line-height: 18px;
   }
 }

@@ -2,7 +2,7 @@
   background-color: #ffffff;
   color: #283645;
   list-style: none;
-  margin: 0;
+  margin: 49px auto 40px;
   padding: 0;
 }
 
@@ -24,7 +24,7 @@
   font-weight: bold;
   line-height: 24px;
   margin: 0;
-  padding: 13px 20px;
+  padding: 5px 20px;
   position: absolute;
   right: 20px;
   top: 0;
@@ -53,11 +53,14 @@
 .users-posts__article {
   background-color: #f2f2f2;
   margin: 0 auto;
-  padding: 25px 18px;
-  width: 280px;
+  padding: 17px 18px 20px;
+  width: 244px;
 }
 
 .users-posts__head {
+  align-items: flex-end;
+  display: flex;
+  justify-content: flex-start;
   margin: 0;
   padding: 0;
 }
@@ -74,7 +77,7 @@
   font-size: 12px;
   font-weight: lighter;
   line-height: 24px;
-  margin: 0;
+  margin: 0 3px;
   padding: 0;
   text-transform: uppercase;
 }
@@ -84,7 +87,7 @@
   font-size: 14px;
   font-weight: normal;
   line-height: 24px;
-  margin: 14px 0;
+  margin: 1px 0;
   padding: 0;
 }
 
@@ -93,18 +96,159 @@
   font-size: 12px;
   font-weight: normal;
   line-height: 24px;
-  margin: 0;
-  padding: 0 0 0 30px;
+  margin: 10px 0 0;
+  padding: 0 0 0 31px;
   position: relative;
   text-transform: uppercase;
 
   &::before {
     background: url("../img/icon-heart.svg") no-repeat;
+    bottom: 0;
     content: "";
     height: 12px;
-    left: 0;
+    margin: auto;
     position: absolute;
     top: 0;
     width: 13px;
   }
 }
+
+@media (max-width: @mobile-only) {
+  .users-posts__like::before {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    left: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .users-posts {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 76px;
+  }
+
+  .users-posts__item {
+    margin: 10px 10px;
+    width: 300px;
+
+    &--pano {
+      width: 100%;
+      margin: 0;
+      margin-bottom: 38px;
+    }
+  }
+
+  .users-posts__title {
+    top: 58px;
+  }
+
+  .users-posts__photo {
+    height: 300px;
+    margin: 0;
+    width: 300px;
+
+    &--pano {
+      height: 509px;
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+
+  .users-posts__article {
+    height: 109px;
+    padding: 25px 28px 21px;
+    width: 244px;
+
+    &--pano {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      height: auto;
+      padding: 24px 27px 24px;
+      width: 564px;
+    }
+  }
+
+  .users-posts__head {
+    order: -2;
+  }
+
+  .users-posts__description {
+    height: 59px;
+
+    &--pano {
+      height: auto;
+    }
+  }
+
+  .users-posts__like {
+    order: -1;
+    margin: 0;
+    padding: 0 34px 0 0;
+
+    &::before {
+      margin: auto 0;
+      right: 4px;
+    }
+
+    &--pano::before {
+      margin: auto 0;
+      right: 0;
+    }
+  }
+}
+
+  @media (min-width: @desktop-width) {
+    .users-posts {
+      margin-bottom: 0;
+    }
+
+    .users-posts__item {
+      margin-bottom: 43px;
+
+      &--pano {
+        margin-bottom: 38px;
+      }
+    }
+
+    .users-posts__title {
+      padding: 6px 20px;
+      right: 130px;
+      top: 54px;
+    }
+    .users-posts__photo {
+      height: 400px;
+
+      &--pano {
+        height: 506px;
+      }
+    }
+    .users-posts__article {
+
+      &--pano {
+        width: 885px;
+      }
+    }
+    .users-posts__like {
+      padding: 0 37px 0 0;
+
+      &::before {
+        margin: auto 0;
+        right: 4px;
+      }
+
+      &--pano::before {
+        right: 4px;
+      }
+    }
+
+    .user-posts__description {
+      margin: 0px 0 2px;
+    }
+  }

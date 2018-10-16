@@ -1,10 +1,27 @@
 .contacts {
   background-color: #ffffff;
   margin: 0;
-  padding: 40px 20px;
+  padding: 15px 20px;
 }
 
 .contacts__question {
   margin: 0 auto;
   padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    padding-bottom: 0;
+  }
+  .contacts__question {
+    margin: 32px auto 19px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    padding-bottom: 17px;
+    padding-top: 35px;
+  }
+
 }

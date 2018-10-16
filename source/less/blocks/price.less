@@ -1,17 +1,41 @@
 .price {
   background-color: #f2f2f2;
   margin: 0;
-  padding: 65px 0;
+  padding: 90px 0 7px;
+}
+
+.price__wrapper {
+  overflow: hidden;
 }
 
 .price__packages {
   list-style: none;
   margin: 0;
+  margin-left: -258px;
   padding: 0;
 }
 
 .price__toggles {
   background-color: #f2f2f2;
-  margin: 40px auto;
+  margin: 43px auto;
   padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .price {
+    padding-bottom: 69px;
+    padding-top: 89px;
+  }
+  .price__packages {
+    margin: 0;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+  .price {
+    padding-bottom: 95px;
+    padding-top: 143px;
+  }
+
 }

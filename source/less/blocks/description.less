@@ -4,6 +4,50 @@
   font-size: 14px;
   font-weight: normal;
   line-height: 30px;
-  margin: 0;
-  padding: 55px 20px;
+  margin: 45px 20px;
+  padding: 0;
+  text-align: center;
+
+  &--form-top {
+    margin-bottom: 0;
+  }
+
+  &--photo-middle {
+    margin: 42px 20px;
+  }
+}
+
+.description__line {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .description {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 92px 0 20px;
+    padding: 0px 59px;
+
+    &--photo-middle {
+      margin: 56px 0 70px;
+    }
+  }
+  .description__line {
+    display: inline;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .description {
+    padding: 0px 211px;
+
+    &--narrow {
+      margin: 91px 0 89px;
+      padding: 0px 299px;
+    }
+
+    &--photo-middle {
+      margin: 17px 0 65px;
+    }
+  }
 }

@@ -106,29 +106,34 @@
   padding: 0;
   margin: 0;
 }
-
 @media (min-width: @tablet-width) {
   .packages {
     margin: 0 auto;
   }
+
   .packages__header {
     padding: 9px 24px;
+
     &--empty {
       background-color: transparent;
       border: none;
       display: block;
     }
   }
+
   .packages__title {
     font-size: 16px;
   }
+
   .packages__price {
     font-size: 18px;
   }
+
   .packages__include {
     padding: 0;
     width: auto;
   }
+
   .packages__offer {
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
@@ -140,11 +145,12 @@
     padding: 7px 15px;
     width: 123px;
   }
+
   .packages__comment {
     display: none;
   }
-  .packages__include {
 
+  .packages__include {
     &--true::after {
       bottom: 0;
       left: 0;
@@ -161,8 +167,8 @@
       top: 0;
     }
   }
-  .packages__header {
 
+  .packages__header {
     &--hit::before {
       background: url("../img/bg-hit-tablet.svg") no-repeat;
       height: 61px;
@@ -178,11 +184,11 @@
       width: 61px;
     }
   }
+
   .price__toggles {
     display: none;
   }
 }
-
 @media (min-width: @desktop-width) {
   .packages__header {
     padding: 19px 64px;
@@ -206,18 +212,18 @@
   }
 
   .packages__header {
-  &--hit::before {
-    background: url("../img/bg-hit.svg") no-repeat;
-    background-size: cover;
-    height: 73px;
-    width: 73px;
-  }
+    &--hit::before {
+      background: url("../img/bg-hit.svg") no-repeat;
+      background-size: cover;
+      height: 73px;
+      width: 73px;
+    }
 
-  &--hit::after {
-    height: 73px;
-    left: 6px;
-    top: 10px;
-    width: 73px;
+    &--hit::after {
+      height: 73px;
+      left: 6px;
+      top: 10px;
+      width: 73px;
+    }
   }
-}
 }

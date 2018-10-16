@@ -41,8 +41,7 @@
 
 .form-competition__select-item {
   font-weight: normal;
-  margin: 0;
-  margin-top: 52px;
+  margin: 52px 0 0;
   padding: 0;
 
   &--radio {
@@ -109,8 +108,7 @@
   font-weight: normal;
   line-height: 30px;
   margin: 43px 0;
-  padding: 0;
-  padding-left: 70px;
+  padding: 0 0 0 70px;
   position: relative;
 }
 
@@ -143,26 +141,26 @@
 }
 
 .form-competition__checkbox[type="checkbox"]:checked ~ .form-competition__item-label--checkbox::after {
-    border-color: #d22856;
-    border-top-style: none;
-    border-right-style: none;
-    bottom: 0;
-    height: 11px;
-    left: 0;
-    margin: auto;
-    padding: 0;
-    position: absolute;
-    top: 0;
-    width: 22px;
-    z-index: 2;
+  border-color: #d22856;
+  border-top-style: none;
+  border-right-style: none;
+  bottom: 0;
+  height: 11px;
+  left: 0;
+  margin: auto;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 22px;
+  z-index: 2;
 }
 
 .form-competition__checkbox[type="checkbox"]:hover ~ .form-competition__item-label--checkbox::before {
-    border: 2px solid #283645;
+  border: 2px solid #283645;
 }
 
 .form-competition__checkbox[type="checkbox"]:active ~ .form-competition__item-label--checkbox::before {
-    border: 2px solid #d22856;
+  border: 2px solid #d22856;
 }
 
 .form-competition__comment-title {
@@ -213,7 +211,6 @@
 .form-competition__only-desktop {
   display: none;
 }
-
 @media (min-width: @tablet-width) {
   .form-competition__set {
     border: 2px solid #e5e5e5;
@@ -224,7 +221,7 @@
 
     &--dark {
       background-color: #ffffff;
-      padding: 0px 56px 60px;
+      padding: 0 56px 60px;
       width: 504px;
     }
 
@@ -256,6 +253,7 @@
       width: 200px;
     }
   }
+
   .form-competition__list {
     margin: 0 auto;
 
@@ -263,6 +261,7 @@
       margin: 0;
     }
   }
+
   .form-competition__item {
     display: flex;
     margin: 0 auto;
@@ -281,6 +280,43 @@
       margin-bottom: 17px;
     }
   }
+
+  .form-competition__text-input {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+
+    &--phone::after {
+      background-image: url("../img/icon-phone.svg");
+      background-color: #e5e5e5;
+      background-repeat: no-repeat;
+      background-position: center;
+      content: "";
+      display: block;
+      height: 63px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 63px;
+      z-index: 2;
+    }
+
+    &--mail::after {
+      background-image: url("../img/icon-mail.svg");
+      background-color: #e5e5e5;
+      background-repeat: no-repeat;
+      background-position: center;
+      content: "";
+      display: block;
+      height: 63px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 63px;
+      z-index: 2;
+    }
+  }
+
   .form-competition__text {
     margin: 0;
 
@@ -292,43 +328,15 @@
     &--contacts {
       width: 459px;
       padding: 15px 20px;
-      position: relative;
-      z-index: 1;
     }
-
-    &--phone::after {
-      background-image: url("../img/icon-phone.svg");
-      background-color: #e5e5e5;
-      content: "";
-      display: block;
-      height: 60px;
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 60px;
-      z-index: 2;
-    }
-
-    &--mail::after {
-        background-image: url("../img/icon-mail.svg");
-        background-color: #e5e5e5;
-        content: "";
-        display: block;
-        height: 60px;
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 60px;
-        z-index: 2;
-      }
   }
+
   .form-competition__text-label {
-
     &--name {
-      margin: 0;
-      margin-right: 21px;
+      margin: 0 21px 0 0;
     }
   }
+
   .form-competition__title {
     font-size: 14px;
     float: none;
@@ -345,8 +353,8 @@
       margin: 0 auto;
     }
   }
-  .form-competition__select-item {
 
+  .form-competition__select-item {
     &--radio {
       margin-top: 44px;
     }
@@ -356,19 +364,23 @@
       margin-top: 0;
     }
   }
+
   .form-competition__item-label {
     padding-left: 61px;
   }
+
   .form-competition__comment-title {
     float: none;
     padding: 0 38px;
     margin: 0 auto;
   }
+
   .form-competition__comment {
     height: 159px;
     padding: 15px 17px;
     width: 460px;
   }
+
   .form-competition__bottom {
     align-items: center;
     display: flex;
@@ -377,14 +389,15 @@
     margin-bottom: 31px;
     padding: 0 20px;
   }
+
   .form-competition__button {
     margin: 18px 0;
   }
+
   .form-competition__note {
     margin: 0;
   }
 }
-
 @media (min-width: @desktop-width) {
   .form-competition {
     align-items: flex-start;
@@ -396,17 +409,15 @@
   }
 
   .form-competition__set {
-
     &--name {
       width: 46%;
-      margin: 0;
-      margin-top: 20px;
+      margin: 20px 0 0;
     }
 
     &--device {
       width: 30%;
       margin: 0;
-      padding: 0px 73px 60px;
+      padding: 0 73px 60px;
     }
 
     &--adress {
@@ -426,7 +437,6 @@
   }
 
   .form-competition__list {
-
     &--adress {
       align-items: flex-start;
       display: flex;
@@ -444,7 +454,6 @@
   }
 
   .form-competition__item {
-
     &--name {
       margin: 0 auto 54px;
 
@@ -458,8 +467,20 @@
     }
   }
 
-  .form-competition__text {
+  .form-competition__text-input {
 
+    &--phone::after {
+      height: 62px;
+      width: 62px;
+    }
+
+    &--mail::after {
+      height: 62px;
+      width: 62px;
+    }
+  }
+
+  .form-competition__text {
     &--name {
       padding: 14px 19px;
     }
@@ -471,7 +492,7 @@
   }
 
   .form-competition__text-label {
-      margin: 10px 21px;
+    margin: 10px 21px;
   }
 
   .form-competition__title {
@@ -482,11 +503,8 @@
   }
 
   .form-competition__select-item {
-
     &--achievement {
-      margin: 0;
-      margin-bottom: 11px;
-      margin-right: 62px;
+      margin: 0 62px 11px 0;
       min-width: 262px;
     }
   }
@@ -504,13 +522,15 @@
 
   .form-competition__bottom {
     padding: 0;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     margin-top: 15px;
     width: 100%;
   }
+
   .form-competition__button {
     margin: 0;
   }
+
   .form-competition__only-desktop {
     display: inline;
   }

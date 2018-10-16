@@ -52,16 +52,14 @@
   box-shadow: 0 10px 0 0 rgba(210, 40, 86, 0.3), 0 20px 0 0 rgba(210, 40, 86, 0.3);
 }
 
-
 .main-nav--closed .main-nav__toggle:hover::before {
   background-color: #d22856;
   box-shadow: 0 10px 0 0 #d22856, 0 20px 0 0 #d22856;
 }
 
 .main-nav--opened .main-nav__menu {
-
-  &::before,
-  &::after {
+  &::after,
+  &::before {
     background-color: #ffffff;
     content: "";
     height: 5px;
@@ -80,18 +78,18 @@
     transform: rotate(-45deg);
   }
 
-  &:active::before,
-  &:active::after {
+  &:active::after,
+  &:active::before {
     background-color: rgba(210, 40, 86, 0.3);
   }
 
-  &:hover::before,
-  &:hover::after {
+  &:hover::after,
+  &:hover::before {
     background-color: #d22856;
   }
 
-  &:focus::before,
-  &:focus::after {
+  &:focus::after,
+  &:focus::before {
     background-color: #d22856;
   }
 
@@ -167,35 +165,35 @@
     opacity: 0.3;
   }
 }
-
 @media (min-width: @tablet-width) {
   .main-nav {
     margin-bottom: -109px;
   }
+
   .main-nav__top {
     padding: 42px 20px;
   }
+
   .main-nav--closed .main-nav__menu::before {
     top: 44px;
   }
-  .main-nav--opened .main-nav__menu {
 
-    &::before,
-    &::after {
+  .main-nav--opened .main-nav__menu {
+    &::after,
+    &::before {
       top: 54px;
     }
   }
 }
-
 @media (max-width: @tablet-width-max) {
   .main-nav--closed .main-nav__list {
     display: none;
   }
+
   .main-nav--closed .main-nav__list {
     display: none;
   }
 }
-
 @media (min-width: @desktop-width) {
   .main-nav {
     align-items: center;
@@ -206,14 +204,17 @@
     margin-bottom: -110px;
     padding: 0 90px;
   }
- .main-nav__menu {
+
+  .main-nav__menu {
     display: none;
   }
+
   .main-nav__top {
     border: none;
     margin: 0 38px;
     padding: 0;
   }
+
   .main-nav__list {
     background-color: transparent;
     border: none;
@@ -222,6 +223,7 @@
     margin: 0;
     padding: 0;
   }
+
   .main-nav__item {
     border: none;
     margin: 23px 42px;
@@ -229,9 +231,10 @@
     width: auto;
 
     &--active {
-    border-bottom: 2px solid #ffffff;
+      border-bottom: 2px solid #ffffff;
     }
   }
+
   .main-nav--opened .main-nav__top {
     background-color: transparent;
   }

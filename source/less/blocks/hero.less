@@ -7,14 +7,14 @@
   font-weight: lighter;
   min-height: 139px;
   margin: 0;
-  padding: 100px 30px 0;
+  padding: 100px 0 0;
 
   &--main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: auto;
-    padding: 173px 0 0;
+    padding: 177px 0 0;
   }
 }
 
@@ -45,10 +45,10 @@
   margin: 0 auto;
   padding: 0;
   text-align: center;
+  width: 260px;
 }
 
 .hero__download {
-  position: static;
   background-color: #1d2631;
   margin: 0;
   padding: 27px 19px 30px;
@@ -57,11 +57,12 @@
 .hero__download-button {
   border: 3px solid #ffffff;
   color: #ffffff;
-  display: inline-block;
+  display: block;
   margin: 0 auto;
-  padding: 15px 29px;
+  padding: 16px 0;
   text-align: center;
   text-decoration: none;
+  width: 276px;
 
   &:hover {
     background-color: #ffffff;
@@ -77,46 +78,51 @@
   .hero {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     min-height: 178px;
-    padding: 181px 19px 80px;
+    padding: 181px 0 80px;
     position: relative;
 
     &--main {
-      padding-bottom: 0;
-      padding-top: 186px;
+      overflow: hidden;
+      padding: 167px 18px 109px;
     }
   }
 
   .hero__text {
     font-size: 50px;
     line-height: 59px;
+    width: 622px;
   }
 
   .hero__image {
+    bottom: 0;
     height: 542px;
-    margin-left: -17px;
+    position: absolute;
+    right: -19px;
     width: 696px;
   }
 
   .hero__download {
     background-color: transparent;
-    left: 1px;
-    position: absolute;
-    top: 141px;
-    width: 300px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 305px;
+    z-index: 1;
   }
 
   .hero__title {
     display: inline-block;
     font-size: 40px;
     font-weight: lighter;
-    line-height: 46px;
-    margin: 36px auto;
+    line-height: 47px;
+    margin: 35px auto;
     padding: 0 30px;
     text-align: center;
   }
 
   .hero__download-button {
-    padding: 15px 39px;
+    padding: 15px 0;
+    width: 293px;
   }
 }
 
@@ -126,25 +132,23 @@
     padding: 175px 69px 41px;
 
     &--main {
-      padding-bottom: 0;
-      padding-top: 209px;
-    }
-
-    &--photo {
-      padding: 175px 271px 41px;
+      padding: 185px 128px 124px;
     }
   }
 
   .hero__image {
     height: 644px;
     margin: 0;
+    right: 129px;
     width: 808px;
-    margin-left: 243px;
   }
 
-  .hero__download {
-    left: 111px;
-    top: 157px;
+  .hero__text {
+    width: 1062px;
+
+    &--photo {
+      width: 658px;
+    }
   }
 
   .hero__title {
@@ -152,13 +156,9 @@
     line-height: 59px;
   }
 
-  .device__download-description {
-    font-size: 18px;
-    line-height: 24px;
-  }
-
   .hero__download-button {
     margin: 17px 0;
-    padding: 14px 21px;
+    padding: 14px 0;
+    width: 296px;
   }
 }

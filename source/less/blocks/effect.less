@@ -4,11 +4,17 @@
 
 @media (min-width: @tablet-width) {
   .effect {
-    align-items: center;
     background-color: #ffffff;
+    display: block;
+    padding: 60px 0;
+  }
+
+  .effect__wrapper {
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    padding: 60px 20px;
+    margin: 0 auto;
+    width: 620px;
   }
 
   .effect__image {
@@ -23,17 +29,18 @@
       content: "24";
       font-size: 96px;
       font-weight: bold;
-      height: 103px;
+      height: 109px;
       left: 0;
       line-height: 96px;
       margin: auto;
-      padding: 37px;
+      padding: 33px;
       position: absolute;
       right: 0;
-      top: 37px;
-      width: 103px;
+      top: 55px;
+      width: 109px;
       z-index: 1;
     }
+  }
 
     .effect__timer {
       height: auto;
@@ -41,12 +48,11 @@
       position: relative;
       width: 100%;
     }
-  }
 
   .effect__description {
-    margin-right: 21px;
+    margin-right: 5px;
     margin-top: 10px;
-    width: 290px;
+    width: 305px;
   }
 
   .effect__title {
@@ -56,11 +62,13 @@
     line-height: 36px;
     margin: 0;
     padding: 0;
+    width: 170px;
   }
 
   .effect__text {
     font-size: 14px;
     font-weight: normal;
+    letter-spacing: 0.3px;
     line-height: 24px;
     margin: 11px 0;
     padding: 0;
@@ -70,6 +78,7 @@
     color: #d22856;
     font-size: 14px;
     font-weight: normal;
+    letter-spacing: 0.3px;
     line-height: 24px;
     text-decoration: underline;
   }
@@ -78,7 +87,11 @@
 @media (min-width: @desktop-width) {
   .effect {
     background-color: #f2f2f2;
-    padding: 24px 130px 67px;
+    padding: 24px 0 67px;
+  }
+
+  .effect__wrapper {
+    width: 940px;
   }
 
   .effect__image {
@@ -89,17 +102,21 @@
       border: 15px solid #d22856;
       border-radius: 130px;
       font-size: 120px;
-      height: 131px;
+      height: 133px;
       line-height: 120px;
-      padding: 45px;
-      top: 70px;
-      width: 131px;
+      padding: 44px;
+      top: 69px;
+      width: 133px;
     }
+  }
+
+  .effect__title {
+    width: 300px;
   }
 
   .effect__description {
     margin-top: 46px;
-    width: 540px;
+    width: 569px;
   }
 
   .effect__text {

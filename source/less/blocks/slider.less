@@ -14,10 +14,12 @@
   display: none;
   margin: 0;
   padding: 0;
+  width: 70px;
 }
 
 .slider__carousel-button {
-  background: transparent;
+  background-color: transparent;
+  background-repeat: no-repeat;
   border: none;
   height: 41px;
   opacity: 0.3;
@@ -40,12 +42,19 @@
   }
 }
 
+.slider__toggles {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 58px;
+}
+
 .slider__toggle {
   background-color: rgba(40, 54, 69, 0.3);
   border: none;
   border-radius: 50px;
   height: 6px;
-  margin: 0 9px;
   padding: 0;
   width: 6px;
 
@@ -53,7 +62,6 @@
     background-color: #ffffff;
     border: 3px solid #283645;
     height: 10px;
-    margin: 0 7px;
     width: 10px;
   }
 

@@ -4,9 +4,10 @@
   font-size: 14px;
   font-weight: normal;
   line-height: 30px;
-  margin: 45px 20px;
+  margin: 45px auto;
   padding: 0;
   text-align: center;
+  width: 280px;
 
   &--form-top {
     margin-bottom: 0;
@@ -25,11 +26,12 @@
   .description {
     font-size: 18px;
     line-height: 30px;
-    margin: 92px 0 20px;
-    padding: 0 59px;
+    margin: 92px auto 20px;
+    padding: 0;
+    width: 542px;
 
     &--photo-middle {
-      margin: 56px 0 70px;
+      margin: 56px auto 70px;
     }
   }
 
@@ -40,15 +42,15 @@
 
 @media (min-width: @desktop-width) {
   .description {
-    padding: 0 211px;
+    width: 778px;
 
     &--narrow {
-      margin: 91px 0 89px;
-      padding: 0 299px;
+      margin: 91px auto 89px;
+      width: 602px;
     }
 
     &--photo-middle {
-      margin: 17px 0 65px;
+      margin: 17px auto 65px;
     }
   }
 }

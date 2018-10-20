@@ -1,5 +1,6 @@
 .hero {
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-color: #10171d;
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
@@ -19,9 +20,8 @@
 }
 
 .hero__image {
-  box-sizing: border-box;
   height: 286px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   width: 258px;
 }
@@ -83,7 +83,7 @@
 
     &--main {
       overflow: hidden;
-      padding: 167px 18px 109px;
+      padding: 185px 0 0;
     }
   }
 
@@ -94,10 +94,9 @@
   }
 
   .hero__image {
-    bottom: 0;
     height: 542px;
-    position: absolute;
-    right: -19px;
+    margin-left: -299px;
+    order: 1;
     width: 696px;
   }
 
@@ -105,6 +104,7 @@
     background-color: transparent;
     float: left;
     margin: 0;
+    margin-top: 17px;
     padding: 0;
     width: 305px;
     z-index: 1;
@@ -115,7 +115,8 @@
     font-size: 40px;
     font-weight: lighter;
     line-height: 47px;
-    margin: 35px auto;
+    margin: 0 auto;
+    margin-bottom: 35px;
     padding: 0 30px;
     text-align: center;
   }
@@ -129,18 +130,23 @@
 @media (min-width: @desktop-width) {
   .hero {
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    padding: 175px 69px 41px;
+    padding: 175px 0 41px;
 
     &--main {
-      padding: 185px 128px 124px;
+      padding: 209px 0 0;
     }
   }
 
   .hero__image {
     height: 644px;
     margin: 0;
+    margin-left: -168px;
     right: 129px;
     width: 808px;
+  }
+
+  .hero__download {
+    margin-top: 11px;
   }
 
   .hero__text {

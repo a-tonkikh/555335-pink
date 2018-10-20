@@ -9,6 +9,7 @@
   box-sizing: border-box;
   height: 374px;
   margin: 0 auto;
+  margin-bottom: 42px;
   overflow: hidden;
   width: 280px;
 }
@@ -68,16 +69,12 @@
 
 @media (min-width: @tablet-width) {
   .user-upload {
-    align-items: flex-end;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    padding: 29px 20px 33px;
+    padding: 29px 0 33px;
   }
 
   .user-upload__photo {
     height: 400px;
-    margin: 0 0 21px;
+    margin: 0 0 22px;
     width: 300px;
   }
 
@@ -96,12 +93,12 @@
 @media (min-width: @desktop-width) {
   .user-upload {
     margin: 0 auto 25px;
-    padding: 25px 36px 35px 81px;
-    max-width: 825px;
+    padding: 25px 0 55px;
+    width: 942px;
   }
 
   .user-upload__photo {
-    margin-bottom: 23px;
+    margin-bottom: 1px;
   }
 
   .user-upload__buttons {
@@ -110,11 +107,10 @@
     justify-content: space-between;
     margin-top: 41px;
     padding: 60px 0 0;
-    width: 456px;
   }
 
   .user-upload__button {
-    margin: 22px auto;
-    width: 178px;
+    margin: 0;
+    width: 184px;
   }
 }

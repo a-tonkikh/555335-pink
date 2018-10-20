@@ -4,18 +4,48 @@
 
 .information__header {
   background-color: #ffffff;
-  padding: 0;
-  margin: 40px auto 30px;
+  margin: 0 auto;
+  overflow: visible;
+  padding: 40px 0 30px;
+  position: relative;
+
+  &::after {
+    background-image: url(../img/bg-triangle-white.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: -39px;
+    content: "";
+    height: 40px;
+    left: 0;
+    margin: 0 auto;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    z-index: 2;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .information__header {
-    margin: 49px auto;
+    margin: 0 auto;
+    padding: 49px 0;
+
+    &::after {
+      bottom: -58px;
+      height: 59px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .information__header {
-    margin: 68px auto 77px;
+    margin: 0 auto;
+    padding: 68px 0 75px;
+
+    &::after {
+      bottom: -93px;
+      height: 94px;
+    }
   }
 }

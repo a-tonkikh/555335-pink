@@ -9,14 +9,14 @@
   border-right: 2px solid #e5e5e5;
   color: #ffffff;
   margin: 0;
-  padding: 18px 86px;
+  padding: 18px 86px 21px;
   position: relative;
 
   &--hit::before {
     background: url("../img/bg-hit.svg") no-repeat;
     content: "";
     height: 73px;
-    left: 0;
+    left: -2px;
     position: absolute;
     top: 0;
     width: 74px;
@@ -41,8 +41,9 @@
 .packages__title {
   font-size: 18px;
   font-weight: bold;
-  line-height: 30px;
+  line-height: 24px;
   margin: 0 auto;
+  margin-bottom: 6px;
   padding: 0;
   text-transform: uppercase;
 }
@@ -50,7 +51,7 @@
 .packages__price {
   font-size: 24px;
   font-weight: lighter;
-  line-height: 30px;
+  line-height: 28px;
   margin: 0 auto;
   min-width: 105px;
   padding: 0;
@@ -75,7 +76,7 @@
   font-weight: normal;
   line-height: 30px;
   margin: 0;
-  padding: 14px 23px;
+  padding: 14px 52px 14px 21px;
   position: relative;
   text-transform: uppercase;
   width: 276px;
@@ -86,8 +87,8 @@
     content: "";
     height: 21px;
     position: absolute;
-    right: 17px;
-    top: 20px;
+    right: 18px;
+    top: 19px;
     width: 31px;
   }
 
@@ -97,7 +98,7 @@
     content: "";
     height: 27px;
     position: absolute;
-    right: 17px;
+    right: 21px;
     top: 15px;
     width: 27px;
   }
@@ -114,7 +115,8 @@
   }
 
   .packages__header {
-    padding: 9px 24px;
+    overflow: hidden;
+    padding: 18px 24px 14px;
 
     &--empty {
       background-color: transparent;
@@ -132,18 +134,21 @@
       font-size: 14px;
       font-weight: normal;
       height: 61px;
-      left: 4px;
-      top: 3px;
+      left: 6px;
+      top: 4px;
       width: 61px;
     }
   }
 
   .packages__title {
     font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 5px;
   }
 
   .packages__price {
     font-size: 18px;
+    line-height: 22px;
   }
 
   .packages__include {
@@ -190,7 +195,7 @@
 
 @media (min-width: @desktop-width) {
   .packages__header {
-    padding: 19px 64px;
+    padding: 20px 64px;
 
     &--hit::before {
       background: url("../img/bg-hit.svg") no-repeat;
@@ -201,20 +206,27 @@
 
     &--hit::after {
       height: 73px;
-      left: 6px;
+      left: 8px;
       top: 10px;
       width: 73px;
     }
   }
 
+  .packages__include {
+    &--true::after {
+      top: 7px;
+    }
+  }
+
   .packages__title {
     font-size: 18px;
-    line-height: 30px;
+    line-height: 24px;
+    margin-bottom: 5px;
   }
 
   .packages__price {
     font-size: 24px;
-    line-height: 30px;
+    line-height: 28px;
   }
 
   .packages__offer {

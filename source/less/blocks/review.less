@@ -1,10 +1,28 @@
 .review {
   background-color: #ffffff;
   color: #283645;
+  padding: 37px 0 45px;
+  position: relative;
+
+  &::after {
+    background-image: url(../img/bg-triangle-white.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: -39px;
+    content: "";
+    height: 40px;
+    left: 0;
+    margin: 0 auto;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    z-index: 2;
+  }
 }
 
 .review__wrapper {
-  margin: 37px auto 25px;
+  margin: 0;
   overflow: hidden;
   padding: 0;
 }
@@ -15,7 +33,10 @@
   flex-wrap: nowrap;
   list-style: none;
   margin: 0 auto;
+  margin-bottom: 33px;
+  overflow: hidden;
   padding: 0;
+  width: 270px;
 }
 
 .review__item {
@@ -45,21 +66,37 @@
   font-size: 14px;
   font-weight: normal;
   line-height: 30px;
-  margin: 13px auto;
+  margin: 0 auto;
+  margin-top: 13px;
   padding: 0;
   text-align: center;
   width: 270px;
 }
 
 .review__toggles {
-  margin: 20px auto;
+  margin: 0 auto;
   padding: 0;
 }
 
 @media (min-width: @tablet-width) {
+  .review {
+    padding: 0;
+    padding-top: 38px;
+
+    &::after {
+      bottom: -58px;
+      height: 59px;
+    }
+  }
+
   .review__wrapper {
     margin: 0 auto;
-    padding: 25px 0 20px;
+    padding: 0;
+    padding-bottom: 20px;
+  }
+
+  .review__list {
+    width: 620px;
   }
 
   .review__item {
@@ -94,6 +131,8 @@
   .review__description {
     font-size: 18px;
     line-height: 30px;
+    margin: 0 auto;
+    margin-bottom: 13px;
     width: 610px;
   }
 
@@ -104,8 +143,7 @@
 
 @media (min-width: @desktop-width) {
   .review {
-    padding: 146px 0 0;
-    position: relative;
+    padding: 184px 0 0;
 
     &::before {
       background: url("../img/icon-quotes.svg") no-repeat;
@@ -118,34 +156,46 @@
       top: 72px;
       width: 79px;
     }
+
+    &::after {
+      bottom: -93px;
+      height: 94px;
+    }
   }
 
   .review__wrapper {
     padding-bottom: 0;
   }
 
+  .review__list {
+    margin-bottom: 33px;
+    width: 695px;
+  }
 
   .review__item {
     width: 700px;
   }
 
   .review__description {
+    margin-bottom: 36px;
     width: 690px;
   }
 
   .review__user {
-    margin-top: 24px;
+    margin: 0 auto;
   }
 
   .review__name {
     font-size: 24px;
+    margin-bottom: 2px;
   }
 
   .review__information {
     font-size: 18px;
+    margin: 0;
   }
 
   .review__toggles {
-    margin-bottom: 0;
+    margin: 0 auto;
   }
 }

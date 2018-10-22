@@ -1,13 +1,16 @@
 .social {
+  align-items: center;
+  display: flex;
+  justify-content: center;
   list-style: none;
-  margin: 40px auto;
+  margin: 33px auto;
   padding: 0;
 }
 
 .social__item {
   border-radius: 50px;
   height: 45px;
-  margin: 0 18px;
+  margin: 0 10px;
   padding: 0;
   width: 45px;
 }
@@ -38,5 +41,21 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    margin: 0 15px 0 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social {
+    margin-left: 22px;
+  }
+
+  .social__item {
+    margin: 0 9px;
   }
 }

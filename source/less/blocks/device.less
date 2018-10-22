@@ -1,7 +1,11 @@
 .device {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
   list-style: none;
-  margin: 30px auto;
+  margin: 34px auto 20px;
   padding: 0;
+  width: 240px;
 }
 
 .device__item {
@@ -37,4 +41,29 @@
   line-height: 24px;
   margin: 0 auto;
   padding: 0;
+  text-align: center;
+  width: 250px;
+}
+
+@media (min-width: @tablet-width) {
+  .device {
+    margin: 46px auto 37px;
+  }
+
+  .device__download-description {
+    font-size: 18px;
+    line-height: 24px;
+    width: 300px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .device {
+    margin: 69px auto 53px;
+  }
+
+  .device__download-description {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }

@@ -6,6 +6,40 @@
 .section-header__hook {
   font-size: 24px;
   font-weight: lighter;
-  margin: 40px auto;
+  line-height: 30px;
+  margin: 0 auto;
+  margin-bottom: 27px;
   padding: 0;
+  text-align: center;
+  width: 225px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .section-header__hook {
+    font-size: 40px;
+    line-height: 48px;
+    margin: 0 auto;
+    width: 590px;
+
+    &--narrow {
+      width: 350px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .section-header__hook {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 0 auto;
+    width: 750px;
+
+    &--narrow {
+      width: 700px;
+    }
+  }
 }

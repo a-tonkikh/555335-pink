@@ -1,10 +1,55 @@
 .contacts {
   background-color: #ffffff;
   margin: 0;
-  padding: 40px 20px;
+  padding: 41px 0 16px;
+  position: relative;
+
+  &::after {
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: -40px;
+    content: "";
+    height: 40px;
+    left: 0;
+    margin: 0 auto;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    z-index: 2;
+  }
 }
 
 .contacts__question {
   margin: 0 auto;
   padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    padding-bottom: 25px;
+    padding-top: 14px;
+
+    &::after {
+      bottom: -69px;
+      height: 70px;
+    }
+  }
+
+  .contacts__question {
+    margin: 32px auto 19px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    padding-bottom: 17px;
+    padding-top: 35px;
+
+    &::after {
+      bottom: -124px;
+      height: 125px;
+    }
+  }
 }

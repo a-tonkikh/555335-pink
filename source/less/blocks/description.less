@@ -4,6 +4,41 @@
   font-size: 14px;
   font-weight: normal;
   line-height: 30px;
-  margin: 0;
-  padding: 55px 20px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  width: 240px;
+
+  &--form-top {
+    width: 275px;
+  }
+}
+
+.description__line {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .description {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0 auto;
+    padding: 0;
+    width: 542px;
+  }
+
+  .description__line {
+    display: inline;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .description {
+    width: 778px;
+
+    &--narrow {
+      margin: 0 auto;
+      width: 602px;
+    }
+  }
 }

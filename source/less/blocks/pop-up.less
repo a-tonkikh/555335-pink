@@ -1,38 +1,75 @@
 .pop-up {
+  display: none;
   background-color: #ffffff;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-  margin: 0;
-  padding: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  padding: 15px 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 .pop-up__text {
   margin: 0 auto;
-  padding: 0;
+  padding: 0 25px;
+  text-align: center;
 }
 
 .pop-up__title {
   font-size: 18px;
   font-weight: bold;
   line-height: 24px;
-  margin: 38px auto;
+  margin: 26px auto;
   padding: 0;
+  text-align: center;
 }
 
 .pop-up__desctiption {
   font-size: 14px;
   font-weight: normal;
   line-height: 24px;
-  margin: 0 auto;
+  margin: 10px auto;
   padding: 0;
+  text-align: center;
 }
 
 .pop-up__button-place {
-  margin: 0;
+  margin: 37px auto;
   padding: 0;
+  text-align: center;
 
   &--success {
     background-color: #f2f2f2;
-    margin: 0;
-    padding: 48px 0;
+    margin: 29px 0;
+    padding: 50px 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .pop-up {
+    width: 461px;
+    height: 363px;
+
+    &--success {
+      height: 406px;
+    }
+  }
+
+  .pop-up__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .pop-up__desctiption {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .pop-up__text {
+    padding: 0 76px;
   }
 }

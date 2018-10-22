@@ -2,15 +2,15 @@
   background-color: #f2f2f2;
   font-family: "Open Sans", sans-serif;
   margin: 0;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .user-upload__photo {
   box-sizing: border-box;
   height: 374px;
   margin: 0 auto;
+  margin-bottom: 42px;
   overflow: hidden;
-  padding: 0;
   width: 280px;
 }
 
@@ -23,15 +23,17 @@
 
 .user-upload__buttons {
   border-top: 1px solid #dddfe0;
-  margin: 0;
-  padding: 0;
+  margin: 13px 0 0;
+  padding: 27px 15px 10px;
 }
 
 .user-upload__button {
+  display: block;
   background-color: transparent;
   margin: 12px auto;
-  padding: 17px;
-  width: 274px;
+  padding: 15px;
+  text-align: center;
+  width: 280px;
 
   &--upload {
     border: 3px solid #d22856;
@@ -62,5 +64,53 @@
       color: #ffffff;
       opacity: 0.3;
     }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .user-upload {
+    padding: 29px 0 33px;
+  }
+
+  .user-upload__photo {
+    height: 400px;
+    margin: 0 0 22px;
+    width: 300px;
+  }
+
+  .user-upload__buttons {
+    border: none;
+    margin: 0;
+    padding: 24px 13px 0;
+  }
+
+  .user-upload__button {
+    margin: 23px auto;
+    width: 259px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-upload {
+    margin: 0 auto 25px;
+    padding: 25px 0 55px;
+    width: 942px;
+  }
+
+  .user-upload__photo {
+    margin-bottom: 1px;
+  }
+
+  .user-upload__buttons {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 41px;
+    padding: 60px 0 0;
+  }
+
+  .user-upload__button {
+    margin: 0;
+    width: 184px;
   }
 }

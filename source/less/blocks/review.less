@@ -28,20 +28,24 @@
 }
 
 .review__list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
   list-style: none;
   margin: 0 auto;
   margin-bottom: 33px;
   overflow: hidden;
   padding: 0;
+  position: relative;
   width: 270px;
 }
 
 .review__item {
+  display: none;
   margin: 0 auto;
   padding: 0;
+  width: 270px;
+
+  &--active {
+    display: block;
+  }
 }
 
 .review__user {
@@ -96,15 +100,19 @@
   }
 
   .review__list {
-    width: 620px;
+    width: 625px;
   }
 
   .review__item {
     align-items: center;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: flex-start;
-    width: 660px;
+    width: 625px;
+
+    &--active {
+      display: flex;
+    }
   }
 
   .review__user {

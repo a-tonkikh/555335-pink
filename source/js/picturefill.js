@@ -1529,5 +1529,3 @@
 	}
 
 } )( window, document );
-
-/* stylelint-enable */

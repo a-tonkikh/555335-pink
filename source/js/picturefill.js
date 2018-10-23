@@ -1,3 +1,5 @@
+/* stylelint-disable */
+
 (function(window) {
 	/*jshint eqnull:true */
 	var ua = navigator.userAgent;
@@ -1527,3 +1529,5 @@
 	}
 
 } )( window, document );
+
+/* stylelint-enable */

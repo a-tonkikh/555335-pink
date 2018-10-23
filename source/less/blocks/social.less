@@ -1,16 +1,20 @@
 .social {
   align-items: center;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   list-style: none;
-  margin: 33px auto;
+  margin: 0 auto;
+  margin-right: 19px;
+  margin-bottom: 4px;
   padding: 0;
+  width: 172px;
 }
 
 .social__item {
   border-radius: 50px;
   height: 45px;
-  margin: 0 10px;
+  margin: 0;
   padding: 0;
   width: 45px;
 }
@@ -52,7 +56,8 @@
 
 @media (min-width: @desktop-width) {
   .social {
-    margin-left: 22px;
+    margin-left: 32px;
+    width: 190px;
   }
 
   .social__item {

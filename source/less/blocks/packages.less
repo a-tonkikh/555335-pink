@@ -1,16 +1,20 @@
 .packages {
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
 }
 
 .packages__header {
   background-color: #283645;
   border-bottom: 2px solid #e5e5e5;
-  border-left: 2px solid #e5e5e5;
   border-right: 2px solid #e5e5e5;
   color: #ffffff;
   margin: 0;
   padding: 18px 86px 21px;
   position: relative;
+
+  &:first-child {
+    border-left: 2px solid #e5e5e5;
+  }
 
   &--hit::before {
     background: url("../img/bg-hit.svg") no-repeat;
@@ -69,17 +73,21 @@
 .packages__include {
   background-color: #ffffff;
   border-bottom: 2px solid #e5e5e5;
-  border-left: 2px solid #e5e5e5;
   border-right: 2px solid #e5e5e5;
   color: #283645;
   font-size: 14px;
   font-weight: normal;
+  letter-spacing: 0.3px;
   line-height: 30px;
   margin: 0;
   padding: 14px 52px 14px 21px;
   position: relative;
   text-transform: uppercase;
   width: 276px;
+
+  &:first-child {
+    border-left: 2px solid #e5e5e5;
+  }
 
   &--true::after {
     background: url("../img/icon-yes.svg") no-repeat;
@@ -118,10 +126,20 @@
     overflow: hidden;
     padding: 18px 24px 14px;
 
+    &:first-child {
+      border-left: none;
+    }
+
+    &:nth-child(2) {
+      border-left: 2px solid #e5e5e5;
+    }
+
     &--empty {
       background-color: transparent;
       border: none;
+      border-bottom: 2px solid #e5e5e5;
       display: block;
+      height: 45px;
     }
 
     &--hit::before {
@@ -155,6 +173,10 @@
     padding: 0;
     width: auto;
 
+    &:nth-child(2) {
+      border-left: 2px solid #e5e5e5;
+    }
+
     &--true::after {
       left: 0;
       margin: auto;
@@ -172,11 +194,14 @@
 
   .packages__offer {
     background-color: #ffffff;
-    border: 2px solid #e5e5e5;
-    border-collapse: collapse;
+    border-bottom: 2px solid #e5e5e5;
+    border-left: 2px solid #e5e5e5;
+    border-collapse: separate;
+    border-spacing: 0;
     display: table-cell;
     font-size: 14px;
     font-weight: normal;
+    letter-spacing: 0.5px;
     line-height: 30px;
     padding: 7px 15px;
     width: 123px;
@@ -208,15 +233,19 @@
       top: 10px;
       width: 73px;
     }
+
+    &--empty {
+      height: 55px;
+    }
   }
 
   .packages__include {
     &--true::after {
-      top: 18px;
+      top: 21px;
     }
 
     &--false::after {
-      top: 8px;
+      top: 17px;
     }
   }
 

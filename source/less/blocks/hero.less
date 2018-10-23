@@ -1,8 +1,8 @@
 .hero {
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-color: #10171d;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #10171d;
   color: #ffffff;
   font-size: 24px;
   font-weight: lighter;
@@ -15,8 +15,18 @@
     flex-direction: column;
     justify-content: center;
     height: auto;
-    padding: 177px 0 0;
+    padding: 0;
   }
+}
+
+.hero__background {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-color: #10171d;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 177px 0 0;
+  width: 100%;
 }
 
 .hero__image {
@@ -29,6 +39,7 @@
 .hero__picture {
   height: 100%;
   margin: 0;
+  margin-left: -30px;
   object-fit: cover;
   width: 100%;
 }
@@ -51,7 +62,7 @@
 .hero__download {
   background-color: #1d2631;
   margin: 0;
-  padding: 27px 19px 30px;
+  padding: 28px 19px 30px;
 }
 
 .hero__download-button {
@@ -77,11 +88,15 @@
 @media (min-width: @tablet-width) {
   .hero {
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: auto;
     min-height: 178px;
     padding: 181px 0 80px;
     position: relative;
 
     &--main {
+      background-position: center;
       overflow: hidden;
       padding: 185px 0 0;
     }
@@ -93,10 +108,17 @@
     width: 622px;
   }
 
+  .hero__background {
+    background: transparent;
+    margin: 0;
+    margin-left: -337px;
+    order: 1;
+    padding: 0;
+    width: auto;
+  }
+
   .hero__image {
     height: 542px;
-    margin-left: -299px;
-    order: 1;
     width: 696px;
   }
 
@@ -110,13 +132,18 @@
     z-index: 1;
   }
 
+  .hero__picture {
+    margin: 0;
+    padding: 0;
+  }
+
   .hero__title {
     display: inline-block;
     font-size: 40px;
     font-weight: lighter;
-    line-height: 47px;
+    line-height: 48px;
     margin: 0 auto;
-    margin-bottom: 35px;
+    margin-bottom: 31px;
     padding: 0 30px;
     text-align: center;
   }
@@ -160,10 +187,12 @@
   .hero__title {
     font-size: 50px;
     line-height: 59px;
+    margin-bottom: 52px;
   }
 
   .hero__download-button {
-    margin: 17px 0;
+    margin: 0;
+    margin-bottom: 17px;
     padding: 14px 0;
     width: 296px;
   }

@@ -29,7 +29,7 @@
 .review__list {
   list-style: none;
   margin: 0 auto;
-  margin-bottom: 33px;
+  margin-bottom: 34px;
   overflow: hidden;
   padding: 0;
   position: relative;
@@ -48,6 +48,7 @@
 }
 
 .review__user {
+  margin: 0 auto;
   width: 270px;
 }
 
@@ -71,7 +72,7 @@
   letter-spacing: 0.4px;
   line-height: 30px;
   margin: 0 auto;
-  margin-top: 13px;
+  margin-top: 14px;
   padding: 0;
   text-align: center;
   width: 285px;
@@ -147,7 +148,7 @@
 
 @media (min-width: @desktop-width) {
   .review {
-    padding: 184px 0 0;
+    padding: 184px 0 43px;
 
     &::before {
       background: url("../img/icon-quotes.svg") no-repeat;
@@ -172,7 +173,7 @@
   }
 
   .review__list {
-    margin-bottom: 33px;
+    margin-bottom: 0;
     width: 710px;
   }
 
@@ -191,7 +192,7 @@
 
   .review__name {
     font-size: 24px;
-    margin-bottom: 2px;
+    margin-bottom: 3px;
   }
 
   .review__information {
@@ -200,6 +201,6 @@
   }
 
   .review__toggles {
-    margin: 0 auto;
+    display: none;
   }
 }

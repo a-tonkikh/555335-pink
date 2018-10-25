@@ -35,6 +35,10 @@
     fill: #d22856;
   }
 
+  &:focus {
+    fill: #d22856;
+  }
+
   &:active {
     opacity: 0.3;
   }
@@ -185,7 +189,7 @@
   .main-nav {
     margin: 0;
     margin-bottom: -109px;
-    width: auto;
+    width: 100%;
   }
 
   .main-nav__wrapper {
@@ -229,6 +233,7 @@
   .main-nav {
     background-color: rgba(0, 0, 0, 0.3);
     font-weight: normal;
+    letter-spacing: 0.2px;
     margin-bottom: 0;
     position: absolute;
     top: 0;
@@ -239,8 +244,10 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 8px 0;
     margin: 0 auto;
-    width: 942px;
+    width: 938px;
   }
 
   .main-nav__menu {
@@ -250,6 +257,7 @@
   .main-nav__top {
     border: none;
     margin: 0;
+    margin-left: -3px;
     padding: 0;
     width: 160px;
   }
@@ -263,12 +271,14 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    width: 622px;
+    width: 619px;
   }
 
   .main-nav__item {
     border: none;
+    line-height: 18px;
     margin: 23px 0;
+    padding: 14px 0;
     text-transform: none;
     width: auto;
 

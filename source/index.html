@@ -74,16 +74,18 @@
       <h1 class="visually-hidden">Пинк</h1>
       <div class="hero hero--main">
         <div class="container container--hero-main">
-          <div class="hero__image">
-            <picture>
-              <source media="(min-width:660px)" srcset="img/iphone-hand-tablet@1x.png">
-              <source media="(min-width:1200px)" srcset="img/iphone-hand-desktop@1x.png">
-              <img class="hero__picture" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Рука держит смартфон с открытым приложением">
-            </picture>
+          <div class="hero__background">
+            <div class="hero__image">
+              <picture>
+                <source media="(min-width:660px)" srcset="img/iphone-hand-tablet@1x.png">
+                <source media="(min-width:1200px)" srcset="img/iphone-hand-desktop@1x.png">
+                <img class="hero__picture" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Рука держит смартфон с открытым приложением">
+              </picture>
+            </div>
           </div>
           <div class="hero__download">
             <p class="hero__title">Взгляните на жизнь иначе!</p>
-            <a class="round-button hero__download-button" href="#">Скачайте приложение</a>
+            <a class="round-button hero__download-button" href="#">Скачать приложение</a>
             <ul class="hero__device device">
               <li class="device__item">
                 <a href="#" class="device__link device__link--ios">
@@ -134,7 +136,7 @@
                   </picture>
                 </div>
                 <h3 class="features__title">Меняет мир вокруг</h3>
-                <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br> усилить эффект</p>
               </li>
               <li class="features__item">
                 <div class="features__pic features__pic--mobile">
@@ -157,8 +159,8 @@
             <img class="effect__timer" src="img/icon-timer.svg" width="238" height="276" alt="часы">
           </div>
           <div class="effect__description">
-            <h2 class="effect__title">Эффект на 24 часа!</h2>
-            <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <h2 class="effect__title">Эффект<br> на 24 часа!</h2>
+            <p class="effect__text">Британские ученые провели исследования и доказали,<br> что положительный эффект<br> от использования приложения длится целые сутки!</p>
             <a class="effect__more" href="#">Узнать больше об исследовании</a>
           </div>
         </div>
@@ -287,7 +289,7 @@
               <p class="contacts-list__address">+7 (812) 555-66-66</p>
             </li>
             <li class="contacts-list__item contacts-list__item--mail">
-              <h3 class="contacts-list__title">Пишите:</h3>
+              <h3 class="contacts-list__title contacts-list__title--mail">Пишите:</h3>
               <p class="contacts-list__address"><a class="contacts-list__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
             </li>
             <li class="contacts-list__item">
@@ -362,24 +364,7 @@
       </div>
     </footer>
   </div>
-
-  <!-- <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__menu');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-  </script> -->
-
+  <script src="js/main.js"></script>
 </body>
 
 </html>

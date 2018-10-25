@@ -162,19 +162,19 @@
   position: relative;
 
   &::before {
-  background-color: #ffffff;
-  border: 2px solid #e5e5e5;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 35px;
-  left: 0;
-  margin: auto;
-  padding: 0;
-  top: 0;
-  position: absolute;
-  width: 35px;
-  z-index: 1;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 35px;
+    left: 0;
+    margin: auto;
+    padding: 0;
+    top: 0;
+    position: absolute;
+    width: 35px;
+    z-index: 1;
   }
 
   &--radio::before {
@@ -184,7 +184,7 @@
 
 
 .form-competition__checkbox[type="checkbox"]:checked ~ .form-competition__item-label--checkbox::before {
-  background-image: url(../img/icon-checked.svg);
+  background-image: url("../img/icon-checked.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -198,7 +198,7 @@
 }
 
 .form-competition__radio[type="radio"]:checked ~ .form-competition__item-label--radio::before {
-  background-image: url(../img/icon-map-marker.svg);
+  background-image: url("../img/icon-map-marker.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -567,7 +567,7 @@
       margin-bottom: 52px;
 
       &:last-child {
-        margin-bottom: 0px;
+        margin-bottom: 0;
       }
     }
 

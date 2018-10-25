@@ -15,7 +15,7 @@
 
 @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
   .map {
-    background-image: url("./img/bg-map-mobile@2x.png");
+    background-image: url("../img/bg-map-mobile@2x.png");
     background-size: cover;
 }
 
@@ -28,8 +28,16 @@
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     .map {
-      background-image: url("./img/bg-map-tablet@2x.png");
+      background-image: url("../img/bg-map-tablet@2x.png");
       background-size: cover;
+    }
+  }
+}
+
+@media (min-width: 660px) and (min-resolution: 144dpi),
+      (min-width: 660px) and (min-resolution: 1.5dppx) {
+  .hero {
+    background-image: url("../img/bg-map-tablet@2x.png");
   }
 }
 
@@ -42,7 +50,15 @@
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     .map {
-      background-image: url("./img/bg-map-desctop@2x.png");
+      background-image: url("../img/bg-map-desctop@2x.png");
       background-size: cover;
+    }
+  }
+}
+
+@media (min-width: 1200px) and (min-resolution: 144dpi),
+      (min-width: 1200px) and (min-resolution: 1.5dppx) {
+  .hero {
+    background-image: url("../img/bg-map-desctop@2x.png");
   }
 }

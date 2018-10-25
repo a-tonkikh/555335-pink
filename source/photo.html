@@ -7,6 +7,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="css/style.css">
+  <script>
+    document.createElement("picture");
+  </script>
+  <script src="js/picturefill.js" async></script>
 </head>
 
 <body>
@@ -83,9 +87,9 @@
           <div class="users-posts__photo users-posts__photo--pano">
             <a href="#">
               <picture>
-                <source media="(min-width:1200px)" srcset="img/panorama-desktop@1x.jpg">
-                <source media="(min-width:660px)" srcset="img/panorama-tablet@1x.jpg">
-                <img class="users-posts__image" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама гор с площадки для роупджампинга">
+                <source media="(min-width:1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width:660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                <img class="users-posts__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Панорама гор с площадки для роупджампинга">
               </picture>
             </a>
           </div>
@@ -102,9 +106,9 @@
           <div class="users-posts__photo">
             <a href="#">
               <picture>
-                <source media="(min-width:1200px)" srcset="img/photo-car-desktop@1x.jpg">
-                <source media="(min-width:660px)" srcset="img/photo-car-tablet@1x.jpg">
-                <img class="users-posts__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Белый легковой автомобиль">
+                <source media="(min-width:1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width:660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                <img class="users-posts__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Белый легковой автомобиль">
               </picture>
             </a>
           </div>
@@ -121,9 +125,9 @@
           <div class="users-posts__photo">
             <a href="#">
               <picture>
-                <source media="(min-width:1200px)" srcset="img/photo-drumset-desktop@1x.jpg">
-                <source media="(min-width:660px)" srcset="img/photo-drumset-tablet@1x.jpg">
-                <img class="users-posts__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Барабанная установка">
+                <source media="(min-width:1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width:660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                <img class="users-posts__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" width="280" height="180" alt="Барабанная установка">
               </picture>
             </a>
           </div>
@@ -140,9 +144,9 @@
           <div class="users-posts__photo">
             <a href="#">
               <picture>
-                <source media="(min-width:1200px)" srcset="img/photo-window-desktop@1x.jpg">
-                <source media="(min-width:660px)" srcset="img/photo-window-tablet@1x.jpg">
-                <img class="users-posts__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Окно офисного здания, выходящее на облачное небо">
+                <source media="(min-width:1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width:660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                <img class="users-posts__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" width="280" height="180" alt="Окно офисного здания, выходящее на облачное небо">
               </picture>
             </a>
           </div>
@@ -159,9 +163,9 @@
           <div class="users-posts__photo">
             <a href="#">
               <picture>
-                <source media="(min-width:1200px)" srcset="img/photo-fair-desktop@1x.jpg">
-                <source media="(min-width:660px)" srcset="img/photo-fair-tablet@1x.jpg">
-                <img class="users-posts__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Кубанская бахча">
+                <source media="(min-width:1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width:660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                <img class="users-posts__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="Кубанская бахча">
               </picture>
             </a>
           </div>
@@ -178,9 +182,9 @@
           <div class="users-posts__photo">
             <a href="#">
               <picture>
-                <source media="(min-width:1200px)" srcset="img/photo-pov-desktop@1x.jpg">
-                <source media="(min-width:660px)" srcset="img/photo-pov-tablet@1x.jpg">
-                <img class="users-posts__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Вид от первого лица на ночи человека, сидящего на обрыве">
+                <source media="(min-width:1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width:660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                <img class="users-posts__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" width="280" height="180" alt="Вид от первого лица на ночи человека, сидящего на обрыве">
               </picture>
             </a>
           </div>
@@ -197,9 +201,9 @@
           <div class="users-posts__photo">
             <a href="#">
               <picture>
-                <source media="(min-width:1200px)" srcset="img/photo-wing-desktop@1x.jpg">
-                <source media="(min-width:660px)" srcset="img/photo-wing-tablet@1x.jpg">
-                <img class="users-posts__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Крыло летящего самолета на фоне заката">
+                <source media="(min-width:1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width:660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                <img class="users-posts__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" width="280" height="180" alt="Крыло летящего самолета на фоне заката">
               </picture>
             </a>
           </div>
@@ -221,9 +225,9 @@
           <h2 class="visually-hidden">Загрузить фотографию</h2>
           <div class="user-upload__photo">
             <picture>
-              <source media="(min-width:1200px)" srcset="img/photo-road-desktop@1x.jpg">
-              <source media="(min-width:660px)" srcset="img/photo-road-tablet@1x.jpg">
-              <img class="user-upload__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="загружаемое фото">
+              <source media="(min-width:1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width:660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+              <img class="user-upload__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" width="280" height="374" alt="загружаемое фото">
             </picture>
           </div>
           <div class="edit-block">
@@ -329,6 +333,7 @@
       </div>
     </footer>
   </div>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

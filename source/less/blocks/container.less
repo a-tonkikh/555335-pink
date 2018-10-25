@@ -12,6 +12,18 @@
     padding: 0;
     width: 100%;
   }
+
+  &--pano {
+    padding: 0;
+    margin: 0 auto;
+    width: 245px;
+  }
+
+  &--photo {
+    padding: 0;
+    margin: 0 auto;
+    width: 245px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -42,6 +54,19 @@
       padding: 0;
       width: 540px;
     }
+
+    &--pano {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      height: auto;
+      width: 566px;
+    }
+
+    &--photo {
+      width: 244px;
+    }
   }
 }
 
@@ -64,6 +89,14 @@
     &--form {
       padding: 0;
       width: 821px;
+    }
+
+    &--pano {
+      width: 885px;
+    }
+
+    &--photo {
+      width: 244px;
     }
   }
 }

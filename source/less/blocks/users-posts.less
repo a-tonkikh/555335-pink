@@ -58,12 +58,8 @@
 .users-posts__article {
   background-color: #f2f2f2;
   margin: 0 auto;
-  padding: 17px 18px 20px;
-  width: 244px;
-
-  &--pano {
-    padding: 17px 18px 20px;
-  }
+  padding: 17px 0 20px;
+  width: 280px;
 }
 
 .users-posts__head {
@@ -177,17 +173,13 @@
 
   .users-posts__article {
     height: 109px;
-    padding: 25px 28px 21px;
-    width: 244px;
+    padding: 25px 0 21px;
+    width: 300px;
 
     &--pano {
-      align-items: center;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
       height: auto;
-      padding: 24px 27px;
-      width: 564px;
+      padding: 24px 0;
+      width: 620px;
     }
   }
 
@@ -201,6 +193,7 @@
 
     &--pano {
       height: auto;
+      width: 566px;
     }
   }
 
@@ -240,6 +233,10 @@
     top: 54px;
   }
 
+  .user-posts__head {
+    margin-bottom: 0px;
+  }
+
   .users-posts__photo {
     height: 400px;
 
@@ -250,19 +247,30 @@
 
   .users-posts__article {
     &--pano {
+      padding: 24px 0 22px;
+      width: 940px;
+    }
+  }
+
+  .users-posts__description {
+    margin-bottom: 2px;
+
+    &--pano {
       width: 885px;
     }
   }
 
   .users-posts__like {
-    padding: 0 37px 0 0;
+    padding: 0 34px 0 0;
 
     &::before {
+      bottom: 4px;
       margin: auto 0;
       right: 4px;
     }
 
     &--pano::before {
+      bottom: 2px;
       right: 4px;
     }
   }

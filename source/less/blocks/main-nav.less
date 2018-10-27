@@ -146,7 +146,7 @@
 }
 
 .main-nav--nojs .main-nav__list {
-  display: flex;
+  display: block;
 }
 
 .main-nav__item {
@@ -255,6 +255,7 @@
   }
 
   .main-nav__top {
+    background: transparent;
     border: none;
     margin: 0;
     margin-left: -3px;
@@ -272,6 +273,10 @@
     margin: 0;
     padding: 0;
     width: 619px;
+  }
+
+  .main-nav--nojs .main-nav__list {
+    display: flex;
   }
 
   .main-nav__item {

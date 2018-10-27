@@ -6,7 +6,7 @@
   <title>HTML Academy: Пинк</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <script>
     document.createElement("picture");
   </script>
@@ -14,6 +14,9 @@
 </head>
 
 <body>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <div class="wrap">
     <header class="page-header">
       <nav class="main-nav main-nav--opened page-header__menu">
@@ -87,6 +90,9 @@
           <div class="users-posts__photo users-posts__photo--pano">
             <a href="#">
               <picture>
+                <source type="image/webp" media="(min-width:1200px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width:660px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x">
                 <source media="(min-width:1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
                 <source media="(min-width:660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
                 <img class="users-posts__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Панорама гор с площадки для роупджампинга">
@@ -108,6 +114,9 @@
           <div class="users-posts__photo">
             <a href="#">
               <picture>
+                <source type="image/webp" media="(min-width:1200px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width:660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
                 <source media="(min-width:1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
                 <source media="(min-width:660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
                 <img class="users-posts__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Белый легковой автомобиль">
@@ -129,6 +138,9 @@
           <div class="users-posts__photo">
             <a href="#">
               <picture>
+                <source type="image/webp" media="(min-width:1200px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width:660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
                 <source media="(min-width:1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
                 <source media="(min-width:660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
                 <img class="users-posts__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" width="280" height="180" alt="Барабанная установка">
@@ -150,6 +162,9 @@
           <div class="users-posts__photo">
             <a href="#">
               <picture>
+                <source type="image/webp" media="(min-width:1200px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width:660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
                 <source media="(min-width:1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
                 <source media="(min-width:660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
                 <img class="users-posts__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" width="280" height="180" alt="Окно офисного здания, выходящее на облачное небо">
@@ -171,6 +186,9 @@
           <div class="users-posts__photo">
             <a href="#">
               <picture>
+                <source type="image/webp" media="(min-width:1200px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width:660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
                 <source media="(min-width:1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
                 <source media="(min-width:660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
                 <img class="users-posts__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="Кубанская бахча">
@@ -192,6 +210,9 @@
           <div class="users-posts__photo">
             <a href="#">
               <picture>
+                <source type="image/webp" media="(min-width:1200px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width:660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
                 <source media="(min-width:1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
                 <source media="(min-width:660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
                 <img class="users-posts__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" width="280" height="180" alt="Вид от первого лица на ночи человека, сидящего на обрыве">
@@ -213,6 +234,9 @@
           <div class="users-posts__photo">
             <a href="#">
               <picture>
+                <source type="image/webp" media="(min-width:1200px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width:660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
                 <source media="(min-width:1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
                 <source media="(min-width:660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
                 <img class="users-posts__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" width="280" height="180" alt="Крыло летящего самолета на фоне заката">
@@ -239,6 +263,9 @@
           <h2 class="visually-hidden">Загрузить фотографию</h2>
           <div class="user-upload__photo">
             <picture>
+              <source type="image/webp" media="(min-width:1200px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width:660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
               <source media="(min-width:1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
               <source media="(min-width:660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
               <img class="user-upload__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" width="280" height="374" alt="загружаемое фото">
@@ -250,31 +277,21 @@
                 <li class="edit-photo__tool-item">
                   <label for="crop" class="edit-photo__tool edit-photo__tool--active">
                     <span class="visually-hidden">обрезать фото</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-                      <path fill="none" d="M0,0h48v48H0V0z"/>
-                      <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
-                    </svg>
+                    <svg class="edit-photo__tool-image" width="48" height="48"><use xlink:href="#icon-editor-crop"></use></svg>
                   </label>
                   <input id="crop" class="edit-photo__range edit-photo__range--active" type="range" min="0" max="50" step="1" value="40">
                 </li>
                 <li class="edit-photo__tool-item">
                   <label for="color" class="edit-photo__tool">
                     <span class="visually-hidden">поменять цвет</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-                      <path fill="none" d="M0,0h48v48H0V0z"/>
-                      <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
-                      <rect y="40" width="48" height="3"/>
-                    </svg>
+                    <svg class="edit-photo__tool-image" width="48" height="48"><use xlink:href="#icon-editor-fill"></use></svg>
                   </label>
                   <input id="color" class="edit-photo__range" type="range" min="0" max="50" step="1" value="3">
                 </li>
                 <li class="edit-photo__tool-item">
                   <label for="contrast" class="edit-photo__tool edit-photo__tool--contrast">
                     <span class="visually-hidden">изменить контраст</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-36 -8 32 32" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
-                      <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
-                      <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
-                    </svg>
+                    <svg class="edit-photo__tool-image edit-photo__tool-image--contrast" width="32" height="32"><use xlink:href="#icon-editor-contrast"></use></svg>
                   </label>
                   <input id="contrast" class="edit-photo__range" type="range" min="0" max="50" step="1" value="4">
                 </li>

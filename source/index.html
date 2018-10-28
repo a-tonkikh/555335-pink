@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/opensans.woff" as="font">
   <script>
     document.createElement("picture");
   </script>
@@ -14,9 +15,12 @@
 </head>
 
 <body>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <div class="wrap">
     <header class="page-header">
-      <nav class="main-nav main-nav--opened page-header__menu">
+      <nav class="main-nav main-nav--opened main-nav--nojs page-header__menu">
         <div class="main-nav__wrapper">
           <div class="main-nav__top">
             <a class="main-nav__logo">
@@ -79,15 +83,7 @@
       <div class="hero hero--main">
         <div class="container container--hero-main">
           <div class="hero__background">
-            <div class="hero__image">
-              <picture>
-                <source type="image/webp" media="(min-width:1200px)" srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width:660px)" srcset="img/iphone-hand-tablet@1x.webp 1x, img/iphone-hand-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/iphone-hand-mobile@1x.webp 1x, img/iphone-hand-mobile@2x.webp 2x">
-                <source media="(min-width:1200px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
-                <source media="(min-width:660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
-                <img class="hero__picture" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" width="258" height="286" alt="Рука держит смартфон с открытым приложением">
-              </picture>
+            <div class="hero__phone-image">
             </div>
           </div>
           <div class="hero__download">
@@ -126,40 +122,14 @@
           <div class="container">
             <ul class="features__list">
               <li class="features__item">
-                <div class="features__pic">
-                  <picture>
-                    <source type="image/webp" media="(min-width:1200px)" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x">
-                    <source type="image/webp" srcset="img/iphone-screen-1-tablet@1x.webp 1x, img/iphone-screen-1-tablet@2x.webp 2x">
-                    <source media="(min-width:1200px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
-                    <img class="features__image" src="img/iphone-screen-1-tablet@1x.png" srcset="img/iphone-screen-1-tablet@2x.png 2x" width="150" height="100" alt="Cмартфон с черно-белым изображением">
-                  </picture>
-                </div>
                 <h3 class="features__title">Поднимает настроение</h3>
                 <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
               </li>
               <li class="features__item">
-                <div class="features__pic">
-                  <picture>
-                    <source type="image/webp" media="(min-width:1200px)" srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x">
-                    <source type="image/webp" srcset="img/iphone-screen-2-tablet@1x.webp 1x, img/iphone-screen-2-tablet@2x.webp 2x">
-                    <source media="(min-width:1200px)" srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x">
-                    <img class="features__image features__image--mobile" src="img/iphone-screen-2-tablet@1x.png" srcset="img/iphone-screen-2-tablet@2x.png 2x" width="150" height="100" alt="Cмартфон с розовым изображением">
-                  </picture>
-                </div>
                 <h3 class="features__title">Меняет мир вокруг</h3>
                 <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
               </li>
               <li class="features__item">
-                <div class="features__pic features__pic--mobile">
-                  <picture>
-                    <source type="image/webp" media="(min-width:1200px)" srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width:660px)" srcset="img/iphone-screen-3-tablet@1x.webp 1x, img/iphone-screen-3-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
-                    <source media="(min-width:1200px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
-                    <source media="(min-width:660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
-                    <img class="features__image" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" width="157" height="330" alt="Cмартфон со смайликом и надписью всем привет">
-                  </picture>
-                </div>
                 <h3 class="features__title">Заводит новых друзей</h3>
                 <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
               </li>
@@ -301,7 +271,9 @@
           <ul class="contacts-list">
             <li class="contacts-list__item">
               <h3 class="contacts-list__title">Звоните:</h3>
-              <p class="contacts-list__address">+7 (812) 555-66-66</p>
+              <p class="contacts-list__address">
+                <a class="contacts-list__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+              </p>
             </li>
             <li class="contacts-list__item contacts-list__item--mail">
               <h3 class="contacts-list__title contacts-list__title--mail">Пишите:</h3>

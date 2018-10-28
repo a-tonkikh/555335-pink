@@ -95,41 +95,42 @@
   letter-spacing: 0.2px;
   line-height: 24px;
   margin: 0;
-  margin-bottom: 1px;
+  margin-bottom: 10px;
   padding: 0;
 }
 
 .users-posts__like {
+  align-items: center;
   color: #d22856;
+  display: flex;
+  justify-content: flex-start;
   font-size: 12px;
   font-weight: normal;
   letter-spacing: 0.2px;
   line-height: 24px;
-  margin: 10px 0 0;
-  padding: 0 0 0 31px;
+  margin: 0;
+  padding: 0;
   position: relative;
   text-transform: uppercase;
-
-  &::before {
-    background: url("../img/icon-heart.svg") no-repeat;
-    background-size: contain;
-    bottom: 1px;
-    content: "";
-    height: 17px;
-    margin: auto;
-    position: absolute;
-    width: 14px;
-  }
 }
 
-@media (max-width: @mobile-only) {
-  .users-posts__like::before {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    left: 0;
-  }
+.users-posts__heart {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  margin-right: 20px;
+  padding: 0;
+}
+
+.users-posts__heart-image {
+  height: 13px;
+  fill: #d22856;
+  width: 12px;
+}
+
+.users-posts__count {
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -147,7 +148,7 @@
 
     &--pano {
       width: 100%;
-      margin: 0 0 48px;
+      margin: 0 0 49px;
     }
 
     &:last-child {
@@ -189,34 +190,44 @@
 
   .users-posts__description {
     letter-spacing: 0.3px;
+    margin-bottom: 1px;
     min-height: 59px;
 
     &--pano {
+      margin: 0;
       min-height: auto;
       width: 566px;
     }
   }
 
   .users-posts__like {
+    flex-direction: row-reverse;
+    justify-content: space-between;
     order: -1;
+    width: 244px;
+
+    &--pano {
+      justify-content: flex-end;
+      width: auto;
+    }
+
+  }
+
+  .users-posts__heart {
     margin: 0;
-    padding: 0 31px 0 0;
+    margin-left: 17px;
+    margin-right: 3px;
+  }
 
-    &::before {
-      margin: auto 0;
-      right: 4px;
-    }
-
-    &--pano::before {
-      margin: auto 0;
-      right: 0;
-    }
+  .users-posts__count {
+    margin: 0;
+    padding: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .users-posts__item {
-    margin-bottom: 54px;
+    margin-bottom: 53px;
 
     &--pano {
       margin-bottom: 48px;
@@ -261,18 +272,11 @@
   }
 
   .users-posts__like {
-    padding: 0 34px 0 0;
+    padding: 0;
+  }
 
-    &::before {
-      bottom: 4px;
-      margin: auto 0;
-      right: 4px;
-    }
-
-    &--pano::before {
-      bottom: 2px;
-      right: 4px;
-    }
+  .users-posts__heart {
+    margin-right: 5px;
   }
 
   .user-posts__description {

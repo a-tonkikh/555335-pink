@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/opensans.woff" as="font">
   <script>
     document.createElement("picture");
   </script>
@@ -14,9 +15,12 @@
 </head>
 
 <body>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <div class="wrap">
     <header class="page-header">
-      <nav class="main-nav main-nav--opened page-header__menu">
+      <nav class="main-nav main-nav--opened main-nav--nojs page-header__menu">
         <div class="main-nav__wrapper">
           <div class="main-nav__top">
             <a class="main-nav__logo" href="index.html">

@@ -1,6 +1,11 @@
 .users-posts {
   background-color: #ffffff;
   color: #283645;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.users-posts__list {
   list-style: none;
   margin: 0 auto;
   padding: 0;
@@ -31,8 +36,8 @@
   margin: 0;
   padding: 5px 20px;
   position: absolute;
-  right: 20px;
-  top: 0;
+  right: 0;
+  top: -137px;
   text-transform: uppercase;
 }
 
@@ -59,6 +64,7 @@
   background-color: #f2f2f2;
   margin: 0 auto;
   padding: 17px 0 20px;
+  position: relative;
   width: 280px;
 }
 
@@ -134,7 +140,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .users-posts {
+  .users-posts__list {
     align-items: flex-start;
     display: flex;
     flex-wrap: wrap;
@@ -157,7 +163,7 @@
   }
 
   .users-posts__title {
-    top: 58px;
+    top: -451px;
   }
 
   .users-posts__photo {
@@ -225,6 +231,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .users-posts__list {
+    width: 960px;
+  }
+
   .users-posts__item {
     margin-bottom: 53px;
 
@@ -239,8 +249,7 @@
 
   .users-posts__title {
     padding: 6px 20px;
-    right: 130px;
-    top: 54px;
+    top: -452px;
   }
 
   .user-posts__head {

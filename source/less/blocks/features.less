@@ -10,7 +10,7 @@
     background-image: url("../img/iphone-screen-mobile@1x.png");
     background-repeat: no-repeat;
     background-size: contain;
-    bottom: -38px;
+    bottom: -40px;
     content: "";
     height: 315px;
     left: 0;
@@ -84,17 +84,7 @@
     padding: 73px 0 41px;
 
     &::after {
-      background-image: url("../img/iphone-screen-3-tablet@1x.png");
-      background-repeat: no-repeat;
-      background-size: contain;
-      bottom: 0;
-      content: "";
-      height: 481px;
-      left: 20px;
-      margin: 0;
-      position: absolute;
-      width: 268px;
-      z-index: 3;
+      display: none;
     }
   }
 
@@ -130,24 +120,9 @@
   }
 }
 
-@media (min-width: 660px) and (min-resolution: 144dpi),
-  (min-width: 660px) and (min-resolution: 1.5dppx) {
-  .features {
-    &::after {
-      background-image: url("../img/iphone-screen-3-tablet@2x.png");
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
-  }
-}
-
 @media (min-width: @desktop-width) {
   .features {
     padding: 370px 0 8px;
-
-    &::after {
-      display: none;
-    }
   }
 
   .features__list {

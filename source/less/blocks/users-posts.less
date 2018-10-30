@@ -15,6 +15,7 @@
   margin: 0 auto;
   margin-bottom: 20px;
   padding: 0;
+  position: relative;
   width: 280px;
 
   &--pano {
@@ -27,17 +28,26 @@
   }
 }
 
+.users-posts__title-pano {
+  left: 0;
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 280px;
+}
+
 .users-posts__title {
   background-color: #d22856;
+  display: block;
   color: #ffffff;
   font-size: 12px;
   font-weight: bold;
+  float: right;
   line-height: 24px;
   margin: 0;
   padding: 5px 20px;
-  position: absolute;
-  right: 0;
-  top: -137px;
   text-transform: uppercase;
 }
 
@@ -162,8 +172,9 @@
     }
   }
 
-  .users-posts__title {
-    top: -451px;
+  .users-posts__title-pano {
+    top: 58px;
+    width: 620px;
   }
 
   .users-posts__photo {
@@ -247,9 +258,13 @@
     }
   }
 
+  .users-posts__title-pano {
+    top: 54px;
+    width: 940px;
+  }
+
   .users-posts__title {
     padding: 6px 20px;
-    top: -452px;
   }
 
   .user-posts__head {
